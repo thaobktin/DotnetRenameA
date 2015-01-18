@@ -1,0 +1,22 @@
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer\obj\Debug\DotNetRenamer.vbprojResolveAssemblyReference.cache
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer\obj\Debug\DotNetRenamer.Frm_Main.resources
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer\obj\Debug\DotNetRenamer.Resources.resources
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer\obj\Debug\DotNetRenamer.vbproj.GenerateResource.Cache
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\DotNetRenamer.exe
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\DotNetRenamer.pdb
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\DotNetRenamer.Helper.dll
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\DotNetRenamer.Implementer.dll
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\dnlib.dll
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\DotNetRenamer.Core20Reader.dll
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\DotNetRenamer.Helper.pdb
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\DotNetRenamer.Implementer.pdb
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\DotNetRenamer.Core20Reader.pdb
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\obj\Debug\DotNetRenamer.Frm_Main.resources
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\obj\Debug\DotNetRenamer.Resources.resources
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\obj\Debug\DotNetRenamer.exe
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\obj\Debug\DotNetRenamer.pdb
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\DotNetRenamer.exe.config
+C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\Config.ini

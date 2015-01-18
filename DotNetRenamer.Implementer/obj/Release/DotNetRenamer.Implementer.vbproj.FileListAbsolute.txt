@@ -1,0 +1,185 @@
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.dll
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.pdb
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.xml
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.dll
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\Mono.Cecil.dll
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\Mono.Cecil.pdb
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.pdb
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.xml
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.Resources.resources
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.dll
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.xml
+E:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.pdb
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.dll
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.pdb
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.xml
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.dll
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\Mono.Cecil.dll
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\Mono.Cecil.pdb
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.pdb
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.xml
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.Resources.resources
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.dll
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.xml
+G:\DotNet Renamer - Copie\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.pdb
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.dll
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.pdb
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.xml
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.dll
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\Mono.Cecil.dll
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\Mono.Cecil.pdb
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.pdb
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.xml
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.Resources.resources
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.dll
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.xml
+G:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.pdb
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.dll
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.pdb
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.xml
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.dll
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\Mono.Cecil.dll
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\Mono.Cecil.pdb
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.pdb
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.xml
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.Resources.resources
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.dll
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.xml
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.pdb
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Core20Reader.dll
+E:\DotNet Renamer - Copie0\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\bin\Release\Mono.Cecil.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\bin\Release\Mono.Cecil.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.Resources.resources
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.dll
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\bin\Release\Mono.Cecil.dll
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\bin\Release\Mono.Cecil.pdb
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\bin\Release\DotNetRenamer.Helper.pdb
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.Resources.resources
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Engine\obj\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.dll
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.pdb
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNet Renamer - New\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.dll
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.pdb
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.dll
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.pdb
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.dll
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.pdb
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+D:\3dotdev-dotnet-renamer-Good\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Implementer\bin\Release\dnlib.dll
+E:\DotNetRenamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+E:\DotNetRenamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+E:\DotNetRenamer\DotNetRenamer.Implementer\bin\Release\dnlib.dll
+E:\DotNetRenamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+E:\DotNetRenamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+E:\DotNetRenamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+E:\DotNetRenamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+E:\DotNetRenamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+E:\DotNetRenamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+E:\DotNetRenamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+E:\DotNetRenamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+E:\DotNetRenamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\bin\Release\dnlib.dll
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb

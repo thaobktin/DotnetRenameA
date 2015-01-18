@@ -1,0 +1,55 @@
+D:\Documents\Visual Studio 2012\Projects\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\Documents\Visual Studio 2012\Projects\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\Documents\Visual Studio 2012\Projects\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.Resources.resources
+D:\Documents\Visual Studio 2012\Projects\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2012\Projects\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.dll
+D:\Documents\Visual Studio 2012\Projects\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.pdb
+E:\DotNet Renamer - Copie0\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.dll
+E:\DotNet Renamer - Copie0\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.pdb
+E:\DotNet Renamer - Copie0\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.Resources.resources
+E:\DotNet Renamer - Copie0\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbproj.GenerateResource.Cache
+E:\DotNet Renamer - Copie0\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.dll
+E:\DotNet Renamer - Copie0\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.Resources.resources
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbproj.GenerateResource.Cache
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.Resources.resources
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbproj.GenerateResource.Cache
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNet Renamer - Copie\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.pdb
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.dll
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.pdb
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.Resources.resources
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbproj.GenerateResource.Cache
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.dll
+F:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.pdb
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.dll
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.pdb
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.Resources.resources
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbproj.GenerateResource.Cache
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.dll
+E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.Resources.resources
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbproj.GenerateResource.Cache
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbprojResolveAssemblyReference.cache
+E:\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.dll
+E:\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.pdb
+E:\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.Resources.resources
+E:\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbproj.GenerateResource.Cache
+E:\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.dll
+E:\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.pdb
+D:\Documents\dotnet-renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\Documents\dotnet-renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\Documents\dotnet-renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.Resources.resources
+D:\Documents\dotnet-renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbproj.GenerateResource.Cache
+D:\Documents\dotnet-renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.dll
+D:\Documents\dotnet-renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.pdb
