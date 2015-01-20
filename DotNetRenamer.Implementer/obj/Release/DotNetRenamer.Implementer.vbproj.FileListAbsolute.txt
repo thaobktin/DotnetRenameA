@@ -149,8 +149,6 @@ D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.dll
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\Mono.Cecil.pdb
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
@@ -183,3 +181,4 @@ D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.
 D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
 D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
 D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\dnlib.dll

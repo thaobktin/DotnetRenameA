@@ -123,26 +123,11 @@ Namespace Processing
                         Cls_Renamer.RenameVariables(meth)
                     End If
                 Else
-                    If method.Name.StartsWith("get_") OrElse method.Name.StartsWith("set_") Then
-                        Dim meth As MethodDef = method
-                        If _RenamingAccept.Methods Then
-                            If Not type.IsNested Then
-                                meth = Cls_Renamer.RenameMethod(type, meth)
-                            End If
-                        End If
-                        If _RenamingAccept.Parameters Then
-                            Cls_Renamer.RenameParameters(meth)
-                        End If
-                        If _RenamingAccept.Variables Then
-                            Cls_Renamer.RenameVariables(meth)
-                        End If
-                    Else
-                        If _RenamingAccept.Parameters Then
-                            Cls_Renamer.RenameParameters(method)
-                        End If
-                        If _RenamingAccept.Variables Then
-                            Cls_Renamer.RenameVariables(method)
-                        End If
+                    If _RenamingAccept.Parameters Then
+                        Cls_Renamer.RenameParameters(method)
+                    End If
+                    If _RenamingAccept.Variables Then
+                        Cls_Renamer.RenameVariables(method)
                     End If
                 End If
             Next

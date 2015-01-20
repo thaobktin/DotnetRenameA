@@ -72,6 +72,14 @@ Namespace Processing
                         Next
                     End If
                 End If
+
+                If Cls_CecilHelper.IsRenamable(mDef) Then
+                    If Cls_CecilHelper.IsGetter(mDef) Then
+                        mDef.Name = Cls_Mapping.RenameMethodMember(mDef, "get_" & obfuscatedN)
+                    ElseIf Cls_CecilHelper.IsSetter(mDef) Then
+                        mDef.Name = Cls_Mapping.RenameMethodMember(mDef, "set_" & obfuscatedN)
+                    End If
+                End If
             End If
         End Sub
 

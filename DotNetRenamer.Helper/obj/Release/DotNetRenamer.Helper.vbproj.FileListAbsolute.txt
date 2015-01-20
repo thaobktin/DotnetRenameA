@@ -88,9 +88,6 @@ E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNe
 E:\3dotdev-dotnet-renamer-f78af89ffa92\3dotdev-dotnet-renamer-f78af89ffa92\DotNetRenamer.Helper\obj\Release\DotNetRenamer.Helper.pdb
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\bin\Release\DotNetRenamer.Helper.dll
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\bin\Release\DotNetRenamer.Helper.pdb
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\bin\Release\Mono.Cecil.dll
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\bin\Release\Mono.Cecil.pdb
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\obj\Release\DotNetRenamer.Helper.vbprojResolveAssemblyReference.cache
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\obj\Release\DotNetRenamer.Helper.Resources.resources
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\obj\Release\DotNetRenamer.Helper.vbproj.GenerateResource.Cache
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\obj\Release\DotNetRenamer.Helper.dll
@@ -111,3 +108,4 @@ D:\Documents\dotnet-renamer\DotNetRenamer.Helper\obj\Release\DotNetRenamer.Helpe
 D:\Documents\dotnet-renamer\DotNetRenamer.Helper\obj\Release\DotNetRenamer.Helper.vbproj.GenerateResource.Cache
 D:\Documents\dotnet-renamer\DotNetRenamer.Helper\obj\Release\DotNetRenamer.Helper.dll
 D:\Documents\dotnet-renamer\DotNetRenamer.Helper\obj\Release\DotNetRenamer.Helper.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\bin\Release\dnlib.dll

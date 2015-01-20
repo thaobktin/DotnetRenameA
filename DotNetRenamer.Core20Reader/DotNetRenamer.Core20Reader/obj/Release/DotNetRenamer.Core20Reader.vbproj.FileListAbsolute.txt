@@ -40,7 +40,6 @@ D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Read
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbproj.GenerateResource.Cache
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.dll
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.pdb
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.vbprojResolveAssemblyReference.cache
 E:\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.dll
 E:\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\bin\Release\DotNetRenamer.Core20Reader.pdb
 E:\DotNetRenamer\DotNetRenamer.Core20Reader\DotNetRenamer.Core20Reader\obj\Release\DotNetRenamer.Core20Reader.Resources.resources

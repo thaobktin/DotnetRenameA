@@ -38,7 +38,8 @@ Namespace CecilHelper
         ''' </summary>
         ''' <param name="prop"></param>
         Public Shared Function IsRenamable(prop As PropertyDef) As Boolean
-            Return Not prop.IsRuntimeSpecialName OrElse Not prop.IsSpecialName
+            'OrElse prop.DeclaringType.Name.Contains("AnonymousType")
+            Return Not ((prop.IsSpecialName OrElse prop.IsRuntimeSpecialName))
         End Function
 
         ''' <summary>
@@ -47,10 +48,18 @@ Namespace CecilHelper
         ''' <param name="field"></param>
         Public Shared Function IsRenamable(field As FieldDef) As Boolean
             'Return If((Not field.IsRuntimeSpecialName AndAlso Not field.DeclaringType.HasGenericParameters) And Not field.IsPInvokeImpl AndAlso Not field.IsSpecialName, True, False)
-            If (Not field.IsRuntimeSpecialName AndAlso Not field.DeclaringType.HasGenericParameters) And Not field.IsPInvokeImpl AndAlso Not field.IsSpecialName Then
+            If (Not field.IsRuntimeSpecialName AndAlso Not field.DeclaringType.HasGenericParameters) And Not field.IsPinvokeImpl AndAlso Not field.IsSpecialName Then
                 Return True
             End If
             Return False
+        End Function
+
+        Public Shared Function IsGetter(method As MethodDef) As Boolean
+            Return method.DeclaringType.Properties.Any(Function(x) x.GetMethod Is method)
+        End Function
+
+        Public Shared Function IsSetter(method As MethodDef) As Boolean
+            Return method.DeclaringType.Properties.Any(Function(x) x.SetMethod Is method)
         End Function
 
         Public Shared Function FindType(moduleDef As ModuleDef, Name As String) As TypeDef
