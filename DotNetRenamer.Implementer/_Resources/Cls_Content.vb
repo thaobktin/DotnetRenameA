@@ -11,7 +11,7 @@ Namespace Resources
 
     Public Class Cls_Content
 
-#Region " Variables "
+#Region " Fields "
         Private Shared _Resources As New List(Of EmbeddedResource)
         Private Shared _embeddedResource As New Dictionary(Of EmbeddedResource, EmbeddedResource)
 #End Region
@@ -25,7 +25,7 @@ Namespace Resources
                 Next
                 For Each modul As ModuleDef In assdef.Modules
                     If modul.HasTypes Then
-                        For Each type As TypeDef In modul.Types()
+                        For Each type As TypeDef In modul.GetTypes()
                             RenameContent(type)
                         Next
                     End If
@@ -84,9 +84,9 @@ Namespace Resources
                 If resName.EndsWith(".resources") Then
                     Dim typeFullName$ = resName.Substring(0, resName.LastIndexOf("."))
                     Dim typeName$ = typeFullName.Replace(".resources", String.Empty).Substring(typeFullName.LastIndexOf(".") + 1)
-                    Dim typeSearch As TypeDef = Cls_CecilHelper.FindType(TypeDef.Module.Assembly.ManifestModule, typeName)
+                    Dim typeSearch As TypeDef = Cls_DnlibHelper.FindType(TypeDef.Module.Assembly.ManifestModule, typeName)
                     If Not typeSearch Is Nothing Then
-                        Dim methodSearch As MethodDef = Cls_CecilHelper.FindMethod(typeSearch, "InitializeComponent")
+                        Dim methodSearch As MethodDef = Cls_DnlibHelper.FindMethod(typeSearch, "InitializeComponent")
                         If Not methodSearch Is Nothing Then
                             UpdateMethodBody(methodSearch, NewKeyName, OriginalKeyName)
                         End If
@@ -149,8 +149,8 @@ Namespace Resources
         End Sub
 
         Public Shared Sub Cleanup()
-            If _Resources.Count <> 0 Then _Resources.Clear()
-            If _embeddedResource.Count <> 0 Then _embeddedResource.Clear()
+            _Resources.Clear()
+            _embeddedResource.Clear()
             CleanUpTmpFiles()
         End Sub
 #End Region

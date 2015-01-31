@@ -3,6 +3,8 @@ Imports DotNetRenamer.Helper.RandomizeHelper
 Imports System.IO
 Imports DotNetRenamer.Helper.UtilsHelper
 Imports dnlib.DotNet
+Imports DotNetRenamer.Implementer.Exclusion
+Imports DotNetRenamer.Implementer.Resources
 
 Namespace Context
 
@@ -12,7 +14,7 @@ Namespace Context
     ''' </summary>
     Public Class Cls_Context
 
-#Region " Variables "
+#Region " Fields "
         Public AssDef As AssemblyDef
         Private _parameters As Cls_Parameters
         Private _processing As Cls_Processing
@@ -73,13 +75,10 @@ Namespace Context
             Dim assemblyMainName$ = AssDef.ManifestModule.EntryPoint.DeclaringType.Namespace
             For Each modul As ModuleDef In AssDef.Modules
                 If modul.HasTypes Then
-                    For Each type As TypeDef In modul.Types()
-                        If type.HasNestedTypes Then
-                            For Each nt In type.NestedTypes
-                                RenameSelectedNamespace(nt, assemblyMainName)
-                            Next
+                    For Each type As TypeDef In modul.GetTypes()
+                        If _parameters.ExcludeList.isTypeExclude(type) = False Then
+                            RenameSelectedNamespace(type, assemblyMainName)
                         End If
-                        RenameSelectedNamespace(type, assemblyMainName)
                     Next
                 End If
             Next
@@ -100,22 +99,10 @@ Namespace Context
                 _processing.ProcessType(type)
             End If
 
-            If type.HasProperties Then
-                _processing.ProcessProperties(type)
-            End If
-
-            If type.HasMethods Then
-                _processing.ProcessMethods(type)
-            End If
-
-            If type.HasFields Then
-                _processing.ProcessFields(type)
-            End If
-
-            If type.HasEvents Then
-                _processing.ProcessEvents(type)
-            End If
-
+            If type.HasProperties Then _processing.ProcessProperties(type)
+            If type.HasMethods Then _processing.ProcessMethods(type)
+            If type.HasFields Then _processing.ProcessFields(type)
+            If type.HasEvents Then  _processing.ProcessEvents(type)
         End Sub
 
         ''' <summary>
@@ -131,6 +118,8 @@ Namespace Context
         Public Sub CleanUp()
             Cls_Randomizer.CleanUp()
             Cls_Mapping.CleanUp()
+            Cls_Content.Cleanup()
+            _parameters.ExcludeList.CleanUp()
             'Me._parameters.RenamingAccept.CleanUp()
         End Sub
 #End Region

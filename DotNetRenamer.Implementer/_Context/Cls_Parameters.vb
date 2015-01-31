@@ -1,5 +1,6 @@
 ﻿Imports DotNetRenamer.Implementer.Analyzer
 Imports DotNetRenamer.Implementer.Context.Cls_RenamerState
+Imports DotNetRenamer.Implementer.Exclusion
 
 Namespace Context
 
@@ -13,6 +14,7 @@ Namespace Context
 
 #Region " Variables "
         Public RenamingAccept As Cls_RenamerState
+        Public ExcludeList As Cls_ExcludeList
 #End Region
 
 #Region " Initialize "

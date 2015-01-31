@@ -14,7 +14,6 @@ Namespace Analyzer
 
 #Region " Variables "
         Private _pe As ICore20Reader
-
         Private _assemblyName As String = String.Empty
         Private _assemblyVersion As String = String.Empty
         Private _isWpfProgram As Boolean
@@ -93,6 +92,9 @@ Namespace Analyzer
         Public Function isWpfProgram() As Boolean
             Return _isWpfProgram
         End Function
+
+
+
 #End Region
 
     End Class

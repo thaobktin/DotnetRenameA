@@ -1,7 +1,8 @@
 ﻿Imports dnlib.DotNet
+Imports dnlib.DotNet.Emit
 
 Namespace CecilHelper
-    Public NotInheritable Class Cls_CecilHelper
+    Public NotInheritable Class Cls_DnlibHelper
 
 #Region " Methods "
         ''' <summary>
@@ -21,8 +22,51 @@ Namespace CecilHelper
         ''' INFO : Verifying if methodDefinition is renamable
         ''' </summary>
         ''' <param name="method"></param>
-        Public Shared Function IsRenamable(method As MethodDef) As Boolean
-            Return Not (method.IsRuntimeSpecialName OrElse method.IsRuntime OrElse method.IsSpecialName OrElse method.IsConstructor OrElse method.HasOverrides OrElse method.IsVirtual OrElse method.IsAbstract OrElse method.Name.EndsWith("GetEnumerator"))
+        Public Shared Function IsRenamable(method As MethodDef, Optional ByVal Force As Boolean = False) As Boolean
+            If Force Then
+                If method.HasBody Then
+                    If method.Body.Instructions.Count <> 0 Then
+                        For i As Integer = 0 To method.Body.Instructions.Count - 1
+                            Dim Instruct As Instruction = method.Body.Instructions(i)
+                            If Instruct.OpCode Is OpCodes.Stfld OrElse Instruct.OpCode Is OpCodes.Ldfld Then
+                                Dim mr As IMemberRef = TryCast(Instruct.Operand, IMemberRef)
+                                If Not mr Is Nothing Then
+                                    If mr.IsFieldDef Then
+                                        Dim fd As FieldDef = TryCast(mr, FieldDef)
+                                        If fd.HasCustomAttributes Then
+                                            For Each ca In fd.CustomAttributes
+                                                If ca.AttributeType.Name = "AccessedThroughPropertyAttribute" Then
+                                                    If ca.HasConstructorArguments Then
+                                                        For Each arg In ca.ConstructorArguments
+                                                            If arg.Value = method.Name.Replace("set_", "").Replace("get_", "") Then
+                                                                Return True
+                                                                Exit For
+                                                            End If
+                                                        Next
+                                                    End If
+                                                End If
+                                            Next
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        Next
+
+                        If method.Body.Instructions(0).OpCode Is OpCodes.Call AndAlso method.Body.Instructions(0).Operand.ToString.EndsWith("get_ResourceManager()") Then
+                            If method.Body.Instructions(1).OpCode Is OpCodes.Ldstr AndAlso (Not method.Body.Instructions(1).Operand Is Nothing) Then
+                                If CStr(method.Body.Instructions(1).Operand) = method.Name.Replace("set_", "").Replace("get_", "") Then
+                                    Return True
+                                End If
+                            End If
+                        End If
+
+                        If method.Name.StartsWith("add_") OrElse method.Name.StartsWith("remove_") Then
+                            Return True
+                        End If
+                    End If
+                End If
+            End If
+            Return method IsNot Nothing AndAlso Not (method.IsRuntimeSpecialName OrElse method.IsRuntime OrElse method.IsSpecialName OrElse method.IsConstructor OrElse method.HasOverrides OrElse method.IsVirtual OrElse method.IsAbstract OrElse method.Name.EndsWith("GetEnumerator"))
         End Function
 
         ''' <summary>
@@ -38,7 +82,6 @@ Namespace CecilHelper
         ''' </summary>
         ''' <param name="prop"></param>
         Public Shared Function IsRenamable(prop As PropertyDef) As Boolean
-            'OrElse prop.DeclaringType.Name.Contains("AnonymousType")
             Return Not ((prop.IsSpecialName OrElse prop.IsRuntimeSpecialName))
         End Function
 
@@ -47,19 +90,34 @@ Namespace CecilHelper
         ''' </summary>
         ''' <param name="field"></param>
         Public Shared Function IsRenamable(field As FieldDef) As Boolean
-            'Return If((Not field.IsRuntimeSpecialName AndAlso Not field.DeclaringType.HasGenericParameters) And Not field.IsPInvokeImpl AndAlso Not field.IsSpecialName, True, False)
             If (Not field.IsRuntimeSpecialName AndAlso Not field.DeclaringType.HasGenericParameters) And Not field.IsPinvokeImpl AndAlso Not field.IsSpecialName Then
                 Return True
             End If
             Return False
         End Function
 
-        Public Shared Function IsGetter(method As MethodDef) As Boolean
-            Return method.DeclaringType.Properties.Any(Function(x) x.GetMethod Is method)
-        End Function
-
-        Public Shared Function IsSetter(method As MethodDef) As Boolean
-            Return method.DeclaringType.Properties.Any(Function(x) x.SetMethod Is method)
+        Public Shared Function GetAccessorMethods(ByVal type As TypeDef) As List(Of MethodDef)
+            Dim list As New List(Of MethodDef)
+            For Each pDef In type.Properties
+                list.Add(pDef.GetMethod)
+                list.Add(pDef.SetMethod)
+                If pDef.HasOtherMethods Then
+                    For Each pDefO In pDef.OtherMethods
+                        list.Add(pDefO)
+                    Next
+                End If
+            Next
+            For Each eDef In type.Events
+                list.Add(eDef.AddMethod)
+                list.Add(eDef.RemoveMethod)
+                list.Add(eDef.InvokeMethod)
+                If eDef.HasOtherMethods Then
+                    For Each eDefO In eDef.OtherMethods
+                        list.Add(eDefO)
+                    Next
+                End If
+            Next
+            Return list
         End Function
 
         Public Shared Function FindType(moduleDef As ModuleDef, Name As String) As TypeDef

@@ -3,6 +3,7 @@
 Imports System.Drawing.Text
 Imports System.Drawing.Drawing2D
 Imports System.ComponentModel
+Imports System.Runtime.InteropServices
 
 ''     DO NOT REMOVE CREDITS! IF YOU USE PLEASE CREDIT!     ''
 
@@ -216,14 +217,15 @@ Namespace XertzLoginTheme
             If CaptureMovement Then
                 Parent.Location = MousePosition - CType(MouseP, Size)
             End If
-            If e.X < Width - 90 AndAlso e.Y > 35 Then Cursor = Cursors.Arrow Else Cursor = Cursors.Hand
+            'If e.X < Width AndAlso e.Y > 35 Then Cursor = Cursors.Arrow Else Cursor = Cursors.Hand
         End Sub
 
         Protected Overrides Sub OnMouseDown(e As MouseEventArgs)
             MyBase.OnMouseDown(e)
             If MouseXLoc > Width - 39 AndAlso MouseXLoc < Width - 16 AndAlso MouseYLoc < 22 Then
                 If _AllowClose Then
-                    Environment.Exit(0)
+                    'Environment.Exit(0)
+                    FindForm.Close()
                 End If
             ElseIf MouseXLoc > Width - 64 AndAlso MouseXLoc < Width - 41 AndAlso MouseYLoc < 22 Then
                 If _AllowMaximize Then
@@ -259,8 +261,10 @@ Namespace XertzLoginTheme
             Invalidate()
         End Sub
 
-#End Region
 
+
+
+#End Region
 
 #Region "Draw Control"
 
@@ -270,6 +274,7 @@ Namespace XertzLoginTheme
             Me.DoubleBuffered = True
             Me.BackColor = _BaseColour
             Me.Dock = DockStyle.Fill
+            'Me.FindForm.
         End Sub
 
         Protected Overrides Sub OnCreateControl()
@@ -391,22 +396,53 @@ Namespace XertzLoginTheme
             Invalidate()
         End Sub
 
-        Property Checked() As Boolean
+        'Property Checked() As Boolean
+        '    Get
+        '        Return _Checked
+        '    End Get
+        '    Set(ByVal value As Boolean)
+        '        _Checked = value
+        '        RaiseEvent CheckedChanged(Me)
+        '        Invalidate()
+        '    End Set
+        'End Property
+
+        'Event CheckedChanged(ByVal sender As Object)
+        'Protected Overrides Sub OnClick(ByVal e As EventArgs)
+        '    MyBase.OnClick(e)
+        '    RaiseEvent CheckedChanged(Me)
+        '    _Checked = Not _Checked
+        'End Sub
+
+
+        Protected Overrides Sub OnClick(e As EventArgs)
+            _Checked = Not _Checked
+            RaiseEvent CheckedChanged(Me, EventArgs.Empty)
+            MyBase.OnClick(e)
+        End Sub
+        Public Property Checked() As Boolean
             Get
                 Return _Checked
             End Get
-            Set(ByVal value As Boolean)
+            Set(value As Boolean)
                 _Checked = value
+                RaiseEvent CheckedChanged(Me, EventArgs.Empty)
                 Invalidate()
             End Set
         End Property
+        Public Event CheckedChanged As EventHandler
 
-        Event CheckedChanged(ByVal sender As Object)
-        Protected Overrides Sub OnClick(ByVal e As EventArgs)
-            _Checked = Not _Checked
-            RaiseEvent CheckedChanged(Me)
-            MyBase.OnClick(e)
-        End Sub
+
+
+
+
+
+
+        'Protected Sub OnCheckedchanged(ByVal e As EventArgs)
+        '    _Checked = Not _Checked
+        '    RaiseEvent CheckedChanged(Me)
+        '    MyBase.OnClick(e)
+        'End Sub
 
 
         'Public Delegate Sub CheckedChangedHandler(ByVal sender As Object, ByVal e As System.EventArgs)
@@ -1179,6 +1215,11 @@ Namespace XertzLoginTheme
             End With
 
         End Sub
+
+        'Overridable Sub PaintBorder(c As Color)
+        '    BorderColour = c
+        '    Invalidate()
+        'End Sub
 
 #End Region
 
@@ -2561,6 +2602,19 @@ Namespace XertzLoginTheme
             Catch ex As Exception : End Try
         End Sub
 
+    End Class
+
+    Public Class TreeViewEx
+        Inherits TreeView
+
+        <DllImport("uxtheme.dll", CharSet:=CharSet.Unicode)> _
+        Private Shared Function SetWindowTheme(hWnd As IntPtr, pszSubAppName As String, pszSubIdList As String) As Integer
+        End Function
+
+        Protected Overrides Sub CreateHandle()
+            MyBase.CreateHandle()
+            SetWindowTheme(Me.Handle, "explorer", Nothing)
+        End Sub
     End Class
 
 End Namespace

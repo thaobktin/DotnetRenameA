@@ -3,6 +3,7 @@ Imports DotNetRenamer.Helper.CecilHelper
 Imports DotNetRenamer.Helper.RandomizeHelper
 Imports DotNetRenamer.Implementer.Resources
 Imports dnlib.DotNet
+Imports DotNetRenamer.Implementer.Exclusion
 
 
 Namespace Processing
@@ -80,7 +81,7 @@ Namespace Processing
                 End If
             End If
 
-            If Cls_CecilHelper.IsRenamable(type) Then
+            If Cls_DnlibHelper.IsRenamable(type) Then
                 Dim TypeOriginal$ = type.Name
                 If _RenamingAccept.CustomAttributes Then
                     Cls_Renamer.RenameCustomAttributesValues(type)
@@ -111,24 +112,12 @@ Namespace Processing
         ''' <param name="type"></param>
         Public Sub ProcessMethods(type As TypeDef)
             For Each method As MethodDef In type.Methods
-                If Cls_CecilHelper.IsRenamable(method) Then
-                    Dim meth As MethodDef = method
-                    If _RenamingAccept.Methods Then
-                        meth = Cls_Renamer.RenameMethod(type, meth)
-                    End If
-                    If _RenamingAccept.Parameters Then
-                        Cls_Renamer.RenameParameters(meth)
-                    End If
-                    If _RenamingAccept.Variables Then
-                        Cls_Renamer.RenameVariables(meth)
+                If Cls_DnlibHelper.IsRenamable(method) Then
+                    If Not Cls_DnlibHelper.GetAccessorMethods(type).Contains(method) Then
+                        ProcessMethod(method, "Methods")
                     End If
                 Else
-                    If _RenamingAccept.Parameters Then
-                        Cls_Renamer.RenameParameters(method)
-                    End If
-                    If _RenamingAccept.Variables Then
-                        Cls_Renamer.RenameVariables(method)
-                    End If
+                    ProcessParameters(method)
                 End If
             Next
         End Sub
@@ -141,19 +130,27 @@ Namespace Processing
         Public Sub ProcessProperties(type As TypeDef)
             If _RenamingAccept.Properties OrElse _RenamingAccept.CustomAttributes Then
                 For Each propDef As PropertyDef In type.Properties
-                    If Cls_CecilHelper.IsRenamable(propDef) Then
+                    If Cls_DnlibHelper.IsRenamable(propDef) Then
 
-                        Dim obfuscatedN As String = Cls_Randomizer.GenerateNew()
-                        Dim originalN As String = propDef.Name
+                        Dim obfuscatedN = Cls_Randomizer.GenerateNew()
+                        Dim originalN = propDef.Name
 
-                        propDef.Name = Cls_Mapping.RenamePropertyMember(propDef, obfuscatedN)
+                        Cls_Renamer.RenameProperty(propDef, obfuscatedN)
                         Cls_Renamer.RenameInitializeComponentsValues(propDef.DeclaringType, obfuscatedN, originalN, True)
-
                         Cls_Renamer.RenameSettings(propDef.GetMethod, originalN, obfuscatedN)
                         Cls_Renamer.RenameSettings(propDef.SetMethod, originalN, obfuscatedN)
 
                         If _RenamingAccept.CustomAttributes Then
                             Cls_Renamer.RenameCustomAttributes(type, propDef, originalN, obfuscatedN)
+                        End If
+
+                        If _RenamingAccept.Methods Then
+                            Dim flag = "Property"
+                            If Not propDef.GetMethod Is Nothing Then ProcessMethod(propDef.GetMethod, flag)
+                            If Not propDef.SetMethod Is Nothing Then ProcessMethod(propDef.SetMethod, flag)
+                            For Each def In propDef.OtherMethods
+                                ProcessMethod(def, flag)
+                            Next
                         End If
                     End If
                 Next
@@ -167,7 +164,7 @@ Namespace Processing
         Public Sub ProcessFields(type As TypeDef)
             If _RenamingAccept.Fields Then
                 For Each field As FieldDef In type.Fields
-                    If Cls_CecilHelper.IsRenamable(field) Then
+                    If Cls_DnlibHelper.IsRenamable(field) Then
                         Cls_Renamer.RenameField(field, Cls_Randomizer.GenerateNew())
                     End If
                 Next
@@ -182,15 +179,47 @@ Namespace Processing
         Public Sub ProcessEvents(type As TypeDef)
             If _RenamingAccept.Events Then
                 For Each events As EventDef In type.Events
-                    If Cls_CecilHelper.IsRenamable(events) Then
+                    If Cls_DnlibHelper.IsRenamable(events) Then
                         If _RenamingAccept.CustomAttributes Then
                             Cls_Renamer.RenameCustomAttributesValues(events)
                         End If
                         If _RenamingAccept.Events Then
                             Cls_Renamer.RenameEvent(events, Cls_Randomizer.GenerateNew())
                         End If
+
+                        If _RenamingAccept.Methods Then
+                            Dim flag = "Event"
+                            If Not events.AddMethod Is Nothing Then ProcessMethod(events.AddMethod, flag)
+                            If Not events.RemoveMethod Is Nothing Then ProcessMethod(events.RemoveMethod, flag)
+
+                            For Each def In events.OtherMethods
+                                ProcessMethod(def, flag)
+                            Next
+                        End If
                     End If
                 Next
+            End If
+        End Sub
+
+        Private Sub ProcessMethod(mDef As MethodDef, DestNode As String)
+            Dim meth As MethodDef = mDef
+            If DestNode = "Event" Then
+                meth = Cls_Renamer.RenameMethod(meth.DeclaringType, meth)
+            Else
+                If Cls_DnlibHelper.IsRenamable(meth) Then
+                    meth = Cls_Renamer.RenameMethod(meth.DeclaringType, meth)
+                End If
+            End If
+            ProcessParameters(meth)
+        End Sub
+
+        Private Sub ProcessParameters(Meth As MethodDef)
+            If _RenamingAccept.Parameters Then
+                Cls_Renamer.RenameParameters(Meth)
+            End If
+
+            If _RenamingAccept.Variables Then
+                Cls_Renamer.RenameVariables(Meth)
             End If
         End Sub
 

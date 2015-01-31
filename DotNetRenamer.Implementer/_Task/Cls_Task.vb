@@ -35,17 +35,12 @@ Namespace Task
 
 #Region " Methods "
         Public Sub StartTask()
-            'PreparingTask()
             ReadAssembly()
             RenameResourceContent()
-            'WriteAssembly()
-            'ReadAssembly()
             RenameAssembly()
             WriteAssembly()
-            'FinalizeTask()
             CleanUp()
             ClearIncrement()
-            '_Log.EndLog()
         End Sub
 
         Overridable Sub OnrenamedItem(sender As Object, e As Cls_RenamedItemEventArgs) Handles Me.RenamedItem

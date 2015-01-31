@@ -71,7 +71,7 @@
     <Compile Include="_AssemblyHelper\AssemblyHelper.vb" />
     <Compile Include="_AssemblyHelper\AssemblyInfos.vb" />
     <Compile Include="_AssemblyHelper\IAssemblyInfos.vb" />
-    <Compile Include="_CecilHelper\Cls_CecilHelper.vb" />
+    <Compile Include="_DnlibHelper\Cls_DnlibHelper.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

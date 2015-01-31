@@ -29,7 +29,7 @@ Partial Class Frm_Main
         Me.LnkLblBlogSpot = New System.Windows.Forms.LinkLabel()
         Me.LsbMain = New DotNetRenamer.XertzLoginTheme.LogInStatusBar()
         Me.GbxPresets = New DotNetRenamer.XertzLoginTheme.LogInGroupBox()
-        Me.LblPresets = New DotNetRenamer.XertzLoginTheme.LogInLabel()
+        Me.BtnExclude = New DotNetRenamer.XertzLoginTheme.LogInButton()
         Me.BtnStart = New DotNetRenamer.XertzLoginTheme.LogInButton()
         Me.TbcPresets = New DotNetRenamer.XertzLoginTheme.LogInTabControl()
         Me.TpCharacters = New System.Windows.Forms.TabPage()
@@ -85,59 +85,59 @@ Partial Class Frm_Main
         Me.TxbSelectedFile = New System.Windows.Forms.TextBox()
         Me.PbxSelectedFile = New System.Windows.Forms.PictureBox()
         Me.BtnSelectFile = New DotNetRenamer.XertzLoginTheme.LogInButton()
-        Me.LogInThemeContainer1.SuspendLayout()
-        Me.GbxPresets.SuspendLayout()
-        Me.TbcPresets.SuspendLayout()
-        Me.TpCharacters.SuspendLayout()
-        Me.PnlCharactersPresets.SuspendLayout()
-        Me.TpNamespaces.SuspendLayout()
-        Me.PnlNamespacesPresets.SuspendLayout()
-        Me.PnlNamespacesGroup.SuspendLayout()
-        Me.TpTypes.SuspendLayout()
-        Me.PnlTypesPresets.SuspendLayout()
-        Me.TpMethods.SuspendLayout()
-        Me.PnlMethodsPresets.SuspendLayout()
-        Me.TpProperties.SuspendLayout()
-        Me.PnlPropertiesPresets.SuspendLayout()
-        Me.TpEvents.SuspendLayout()
-        Me.PnlEventsPresets.SuspendLayout()
-        Me.TpFields.SuspendLayout()
-        Me.PnlFieldsPresets.SuspendLayout()
-        Me.TpAttributes.SuspendLayout()
-        Me.PnlAttributesPresets.SuspendLayout()
-        Me.TpParameters.SuspendLayout()
-        Me.PnlParametersPresets.SuspendLayout()
-        Me.GbxAsemblyInfos.SuspendLayout()
-        Me.GbxSelectFile.SuspendLayout()
-        CType(Me.PbxSelectedFile, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.LogInThemeContainer1.SuspendLayout
+        Me.GbxPresets.SuspendLayout
+        Me.TbcPresets.SuspendLayout
+        Me.TpCharacters.SuspendLayout
+        Me.PnlCharactersPresets.SuspendLayout
+        Me.TpNamespaces.SuspendLayout
+        Me.PnlNamespacesPresets.SuspendLayout
+        Me.PnlNamespacesGroup.SuspendLayout
+        Me.TpTypes.SuspendLayout
+        Me.PnlTypesPresets.SuspendLayout
+        Me.TpMethods.SuspendLayout
+        Me.PnlMethodsPresets.SuspendLayout
+        Me.TpProperties.SuspendLayout
+        Me.PnlPropertiesPresets.SuspendLayout
+        Me.TpEvents.SuspendLayout
+        Me.PnlEventsPresets.SuspendLayout
+        Me.TpFields.SuspendLayout
+        Me.PnlFieldsPresets.SuspendLayout
+        Me.TpAttributes.SuspendLayout
+        Me.PnlAttributesPresets.SuspendLayout
+        Me.TpParameters.SuspendLayout
+        Me.PnlParametersPresets.SuspendLayout
+        Me.GbxAsemblyInfos.SuspendLayout
+        Me.GbxSelectFile.SuspendLayout
+        CType(Me.PbxSelectedFile,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'BgwRenameTask
         '
-        Me.BgwRenameTask.WorkerReportsProgress = True
-        Me.BgwRenameTask.WorkerSupportsCancellation = True
+        Me.BgwRenameTask.WorkerReportsProgress = true
+        Me.BgwRenameTask.WorkerSupportsCancellation = true
         '
         'LogInThemeContainer1
         '
-        Me.LogInThemeContainer1.AllowClose = True
-        Me.LogInThemeContainer1.AllowMaximize = False
-        Me.LogInThemeContainer1.AllowMinimize = True
-        Me.LogInThemeContainer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.LogInThemeContainer1.BaseColour = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.LogInThemeContainer1.BorderColour = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.LogInThemeContainer1.ContainerColour = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.LogInThemeContainer1.AllowClose = true
+        Me.LogInThemeContainer1.AllowMaximize = false
+        Me.LogInThemeContainer1.AllowMinimize = true
+        Me.LogInThemeContainer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(35,Byte),Integer), CType(CType(35,Byte),Integer), CType(CType(35,Byte),Integer))
+        Me.LogInThemeContainer1.BaseColour = System.Drawing.Color.FromArgb(CType(CType(35,Byte),Integer), CType(CType(35,Byte),Integer), CType(CType(35,Byte),Integer))
+        Me.LogInThemeContainer1.BorderColour = System.Drawing.Color.FromArgb(CType(CType(60,Byte),Integer), CType(CType(60,Byte),Integer), CType(CType(60,Byte),Integer))
+        Me.LogInThemeContainer1.ContainerColour = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(54,Byte),Integer), CType(CType(54,Byte),Integer))
         Me.LogInThemeContainer1.Controls.Add(Me.LnkLblBlogSpot)
         Me.LogInThemeContainer1.Controls.Add(Me.LsbMain)
         Me.LogInThemeContainer1.Controls.Add(Me.GbxPresets)
         Me.LogInThemeContainer1.Controls.Add(Me.GbxAsemblyInfos)
         Me.LogInThemeContainer1.Controls.Add(Me.GbxSelectFile)
         Me.LogInThemeContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LogInThemeContainer1.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LogInThemeContainer1.FontColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.LogInThemeContainer1.FontSize = 12
-        Me.LogInThemeContainer1.HoverColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.LogInThemeContainer1.HoverColour = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.LogInThemeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.LogInThemeContainer1.Name = "LogInThemeContainer1"
-        Me.LogInThemeContainer1.ShowIcon = True
+        Me.LogInThemeContainer1.ShowIcon = true
         Me.LogInThemeContainer1.Size = New System.Drawing.Size(685, 691)
         Me.LogInThemeContainer1.TabIndex = 0
         Me.LogInThemeContainer1.Text = "                                                        DotNet Renamer"
@@ -145,31 +145,31 @@ Partial Class Frm_Main
         'LnkLblBlogSpot
         '
         Me.LnkLblBlogSpot.ActiveLinkColor = System.Drawing.Color.White
-        Me.LnkLblBlogSpot.AutoSize = True
-        Me.LnkLblBlogSpot.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.LnkLblBlogSpot.AutoSize = true
+        Me.LnkLblBlogSpot.BackColor = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.LnkLblBlogSpot.LinkColor = System.Drawing.Color.White
         Me.LnkLblBlogSpot.Location = New System.Drawing.Point(263, 672)
         Me.LnkLblBlogSpot.Name = "LnkLblBlogSpot"
         Me.LnkLblBlogSpot.Size = New System.Drawing.Size(161, 13)
         Me.LnkLblBlogSpot.TabIndex = 6
-        Me.LnkLblBlogSpot.TabStop = True
+        Me.LnkLblBlogSpot.TabStop = true
         Me.LnkLblBlogSpot.Text = "http://3dotdevcoder.blogspot.fr/"
         Me.LnkLblBlogSpot.VisitedLinkColor = System.Drawing.Color.BlueViolet
         '
         'LsbMain
         '
         Me.LsbMain.Alignment = DotNetRenamer.XertzLoginTheme.LogInStatusBar.Alignments.Center
-        Me.LsbMain.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.LsbMain.BorderColour = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.LsbMain.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
+        Me.LsbMain.BorderColour = System.Drawing.Color.FromArgb(CType(CType(35,Byte),Integer), CType(CType(35,Byte),Integer), CType(CType(35,Byte),Integer))
         Me.LsbMain.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.LsbMain.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.LsbMain.Font = New System.Drawing.Font("Segoe UI", 9!)
         Me.LsbMain.ForeColor = System.Drawing.Color.White
         Me.LsbMain.LinesToShow = DotNetRenamer.XertzLoginTheme.LogInStatusBar.LinesCount.Two
         Me.LsbMain.Location = New System.Drawing.Point(0, 668)
         Me.LsbMain.Name = "LsbMain"
         Me.LsbMain.RectangleColor = System.Drawing.Color.BlueViolet
-        Me.LsbMain.ShowBorder = True
-        Me.LsbMain.ShowLine = False
+        Me.LsbMain.ShowBorder = true
+        Me.LsbMain.ShowLine = false
         Me.LsbMain.Size = New System.Drawing.Size(685, 23)
         Me.LsbMain.TabIndex = 5
         Me.LsbMain.TextColour = System.Drawing.Color.White
@@ -177,33 +177,35 @@ Partial Class Frm_Main
         'GbxPresets
         '
         Me.GbxPresets.BorderColour = System.Drawing.SystemColors.ButtonShadow
-        Me.GbxPresets.Controls.Add(Me.LblPresets)
+        Me.GbxPresets.Controls.Add(Me.BtnExclude)
         Me.GbxPresets.Controls.Add(Me.BtnStart)
         Me.GbxPresets.Controls.Add(Me.TbcPresets)
         Me.GbxPresets.Controls.Add(Me.CbxPresets)
-        Me.GbxPresets.Enabled = False
-        Me.GbxPresets.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.GbxPresets.HeaderColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.GbxPresets.Enabled = false
+        Me.GbxPresets.Font = New System.Drawing.Font("Segoe UI", 10!, System.Drawing.FontStyle.Bold)
+        Me.GbxPresets.HeaderColour = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.GbxPresets.Location = New System.Drawing.Point(12, 300)
-        Me.GbxPresets.MainColour = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
+        Me.GbxPresets.MainColour = System.Drawing.Color.FromArgb(CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer))
         Me.GbxPresets.Name = "GbxPresets"
         Me.GbxPresets.Size = New System.Drawing.Size(661, 356)
         Me.GbxPresets.TabIndex = 4
         Me.GbxPresets.Text = "Presets"
-        Me.GbxPresets.TextColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GbxPresets.TextColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         '
-        'LblPresets
+        'BtnExclude
         '
-        Me.LblPresets.AutoSize = True
-        Me.LblPresets.BackColor = System.Drawing.Color.Transparent
-        Me.LblPresets.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.LblPresets.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LblPresets.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LblPresets.Location = New System.Drawing.Point(421, 49)
-        Me.LblPresets.Name = "LblPresets"
-        Me.LblPresets.Size = New System.Drawing.Size(214, 15)
-        Me.LblPresets.TabIndex = 8
-        Me.LblPresets.Text = "You can't change presets in this mode !"
+        Me.BtnExclude.BackColor = System.Drawing.Color.Transparent
+        Me.BtnExclude.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
+        Me.BtnExclude.BorderColour = System.Drawing.Color.DimGray
+        Me.BtnExclude.FontColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
+        Me.BtnExclude.HoverColour = System.Drawing.Color.FromArgb(CType(CType(52,Byte),Integer), CType(CType(52,Byte),Integer), CType(CType(52,Byte),Integer))
+        Me.BtnExclude.Location = New System.Drawing.Point(333, 44)
+        Me.BtnExclude.Name = "BtnExclude"
+        Me.BtnExclude.PressedColour = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
+        Me.BtnExclude.ProgressColour = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BtnExclude.Size = New System.Drawing.Size(120, 26)
+        Me.BtnExclude.TabIndex = 9
+        Me.BtnExclude.Text = "Exclusion rules (0)"
         '
         'BtnStart
         '
@@ -707,11 +709,11 @@ Partial Class Frm_Main
         Me.CbxPresets.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CbxPresets.Items.AddRange(New Object() {"Full", "Medium", "Customize"})
         Me.CbxPresets.LineColour = System.Drawing.Color.BlueViolet
-        Me.CbxPresets.Location = New System.Drawing.Point(278, 44)
+        Me.CbxPresets.Location = New System.Drawing.Point(207, 44)
         Me.CbxPresets.Name = "CbxPresets"
-        Me.CbxPresets.Size = New System.Drawing.Size(115, 26)
-        Me.CbxPresets.SqaureColour = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
-        Me.CbxPresets.SqaureHoverColour = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.CbxPresets.Size = New System.Drawing.Size(120, 26)
+        Me.CbxPresets.SqaureColour = System.Drawing.Color.FromArgb(CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer))
+        Me.CbxPresets.SqaureHoverColour = System.Drawing.Color.FromArgb(CType(CType(52,Byte),Integer), CType(CType(52,Byte),Integer), CType(CType(52,Byte),Integer))
         Me.CbxPresets.TabIndex = 0
         '
         'GbxAsemblyInfos
@@ -727,24 +729,24 @@ Partial Class Frm_Main
         Me.GbxAsemblyInfos.Controls.Add(Me.TxbAssemblyInfo)
         Me.GbxAsemblyInfos.Controls.Add(Me.LblVersionInfo)
         Me.GbxAsemblyInfos.Controls.Add(Me.LblAssemblyInfo)
-        Me.GbxAsemblyInfos.Enabled = False
-        Me.GbxAsemblyInfos.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.GbxAsemblyInfos.HeaderColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.GbxAsemblyInfos.Enabled = false
+        Me.GbxAsemblyInfos.Font = New System.Drawing.Font("Segoe UI", 10!, System.Drawing.FontStyle.Bold)
+        Me.GbxAsemblyInfos.HeaderColour = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.GbxAsemblyInfos.Location = New System.Drawing.Point(12, 175)
-        Me.GbxAsemblyInfos.MainColour = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
+        Me.GbxAsemblyInfos.MainColour = System.Drawing.Color.FromArgb(CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer))
         Me.GbxAsemblyInfos.Name = "GbxAsemblyInfos"
         Me.GbxAsemblyInfos.Size = New System.Drawing.Size(661, 114)
         Me.GbxAsemblyInfos.TabIndex = 3
         Me.GbxAsemblyInfos.Text = "Assembly informations"
-        Me.GbxAsemblyInfos.TextColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GbxAsemblyInfos.TextColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         '
         'LblType
         '
-        Me.LblType.AutoSize = True
+        Me.LblType.AutoSize = true
         Me.LblType.BackColor = System.Drawing.Color.Transparent
-        Me.LblType.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.LblType.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LblType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LblType.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.LblType.FontColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
+        Me.LblType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.LblType.Location = New System.Drawing.Point(495, 77)
         Me.LblType.Name = "LblType"
         Me.LblType.Size = New System.Drawing.Size(39, 15)
@@ -753,24 +755,24 @@ Partial Class Frm_Main
         '
         'TxbType
         '
-        Me.TxbType.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.TxbType.BackColor = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.TxbType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxbType.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxbType.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TxbType.ForeColor = System.Drawing.Color.White
         Me.TxbType.Location = New System.Drawing.Point(540, 73)
         Me.TxbType.Name = "TxbType"
-        Me.TxbType.ReadOnly = True
+        Me.TxbType.ReadOnly = true
         Me.TxbType.Size = New System.Drawing.Size(70, 25)
         Me.TxbType.TabIndex = 14
         Me.TxbType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'LblCpuTargetInfo
         '
-        Me.LblCpuTargetInfo.AutoSize = True
+        Me.LblCpuTargetInfo.AutoSize = true
         Me.LblCpuTargetInfo.BackColor = System.Drawing.Color.Transparent
-        Me.LblCpuTargetInfo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.LblCpuTargetInfo.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LblCpuTargetInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LblCpuTargetInfo.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.LblCpuTargetInfo.FontColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
+        Me.LblCpuTargetInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.LblCpuTargetInfo.Location = New System.Drawing.Point(333, 77)
         Me.LblCpuTargetInfo.Name = "LblCpuTargetInfo"
         Me.LblCpuTargetInfo.Size = New System.Drawing.Size(70, 15)
@@ -779,37 +781,37 @@ Partial Class Frm_Main
         '
         'TxbCpuTargetInfo
         '
-        Me.TxbCpuTargetInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.TxbCpuTargetInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.TxbCpuTargetInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxbCpuTargetInfo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxbCpuTargetInfo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TxbCpuTargetInfo.ForeColor = System.Drawing.Color.White
         Me.TxbCpuTargetInfo.Location = New System.Drawing.Point(409, 73)
         Me.TxbCpuTargetInfo.Name = "TxbCpuTargetInfo"
-        Me.TxbCpuTargetInfo.ReadOnly = True
+        Me.TxbCpuTargetInfo.ReadOnly = true
         Me.TxbCpuTargetInfo.Size = New System.Drawing.Size(70, 25)
         Me.TxbCpuTargetInfo.TabIndex = 12
         Me.TxbCpuTargetInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TxbFrameworkInfo
         '
-        Me.TxbFrameworkInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.TxbFrameworkInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.TxbFrameworkInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxbFrameworkInfo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxbFrameworkInfo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TxbFrameworkInfo.ForeColor = System.Drawing.Color.White
         Me.TxbFrameworkInfo.Location = New System.Drawing.Point(257, 73)
         Me.TxbFrameworkInfo.Name = "TxbFrameworkInfo"
-        Me.TxbFrameworkInfo.ReadOnly = True
+        Me.TxbFrameworkInfo.ReadOnly = true
         Me.TxbFrameworkInfo.Size = New System.Drawing.Size(70, 25)
         Me.TxbFrameworkInfo.TabIndex = 11
         Me.TxbFrameworkInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'LblFrameworkInfo
         '
-        Me.LblFrameworkInfo.AutoSize = True
+        Me.LblFrameworkInfo.AutoSize = true
         Me.LblFrameworkInfo.BackColor = System.Drawing.Color.Transparent
-        Me.LblFrameworkInfo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.LblFrameworkInfo.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LblFrameworkInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LblFrameworkInfo.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.LblFrameworkInfo.FontColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
+        Me.LblFrameworkInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.LblFrameworkInfo.Location = New System.Drawing.Point(179, 77)
         Me.LblFrameworkInfo.Name = "LblFrameworkInfo"
         Me.LblFrameworkInfo.Size = New System.Drawing.Size(72, 15)
@@ -818,37 +820,37 @@ Partial Class Frm_Main
         '
         'TxbVersionInfo
         '
-        Me.TxbVersionInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.TxbVersionInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.TxbVersionInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxbVersionInfo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxbVersionInfo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TxbVersionInfo.ForeColor = System.Drawing.Color.White
         Me.TxbVersionInfo.Location = New System.Drawing.Point(103, 73)
         Me.TxbVersionInfo.Name = "TxbVersionInfo"
-        Me.TxbVersionInfo.ReadOnly = True
+        Me.TxbVersionInfo.ReadOnly = true
         Me.TxbVersionInfo.Size = New System.Drawing.Size(70, 25)
         Me.TxbVersionInfo.TabIndex = 10
         Me.TxbVersionInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TxbAssemblyInfo
         '
-        Me.TxbAssemblyInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.TxbAssemblyInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.TxbAssemblyInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxbAssemblyInfo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxbAssemblyInfo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TxbAssemblyInfo.ForeColor = System.Drawing.Color.White
         Me.TxbAssemblyInfo.Location = New System.Drawing.Point(103, 42)
         Me.TxbAssemblyInfo.Name = "TxbAssemblyInfo"
-        Me.TxbAssemblyInfo.ReadOnly = True
+        Me.TxbAssemblyInfo.ReadOnly = true
         Me.TxbAssemblyInfo.Size = New System.Drawing.Size(507, 25)
         Me.TxbAssemblyInfo.TabIndex = 9
         Me.TxbAssemblyInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'LblVersionInfo
         '
-        Me.LblVersionInfo.AutoSize = True
+        Me.LblVersionInfo.AutoSize = true
         Me.LblVersionInfo.BackColor = System.Drawing.Color.Transparent
-        Me.LblVersionInfo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.LblVersionInfo.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LblVersionInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LblVersionInfo.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.LblVersionInfo.FontColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
+        Me.LblVersionInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.LblVersionInfo.Location = New System.Drawing.Point(45, 77)
         Me.LblVersionInfo.Name = "LblVersionInfo"
         Me.LblVersionInfo.Size = New System.Drawing.Size(52, 15)
@@ -857,11 +859,11 @@ Partial Class Frm_Main
         '
         'LblAssemblyInfo
         '
-        Me.LblAssemblyInfo.AutoSize = True
+        Me.LblAssemblyInfo.AutoSize = true
         Me.LblAssemblyInfo.BackColor = System.Drawing.Color.Transparent
-        Me.LblAssemblyInfo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.LblAssemblyInfo.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LblAssemblyInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LblAssemblyInfo.Font = New System.Drawing.Font("Segoe UI", 9!)
+        Me.LblAssemblyInfo.FontColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
+        Me.LblAssemblyInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.LblAssemblyInfo.Location = New System.Drawing.Point(33, 46)
         Me.LblAssemblyInfo.Name = "LblAssemblyInfo"
         Me.LblAssemblyInfo.Size = New System.Drawing.Size(64, 15)
@@ -876,26 +878,26 @@ Partial Class Frm_Main
         Me.GbxSelectFile.Controls.Add(Me.TxbSelectedFile)
         Me.GbxSelectFile.Controls.Add(Me.PbxSelectedFile)
         Me.GbxSelectFile.Controls.Add(Me.BtnSelectFile)
-        Me.GbxSelectFile.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.GbxSelectFile.HeaderColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.GbxSelectFile.Font = New System.Drawing.Font("Segoe UI", 10!, System.Drawing.FontStyle.Bold)
+        Me.GbxSelectFile.HeaderColour = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.GbxSelectFile.Location = New System.Drawing.Point(12, 46)
-        Me.GbxSelectFile.MainColour = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
+        Me.GbxSelectFile.MainColour = System.Drawing.Color.FromArgb(CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer))
         Me.GbxSelectFile.Name = "GbxSelectFile"
         Me.GbxSelectFile.Size = New System.Drawing.Size(661, 118)
         Me.GbxSelectFile.TabIndex = 1
         Me.GbxSelectFile.Text = "Select .Net file (C#, VbNet)"
-        Me.GbxSelectFile.TextColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GbxSelectFile.TextColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         '
         'TxbSelectedOutput
         '
-        Me.TxbSelectedOutput.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.TxbSelectedOutput.BackColor = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.TxbSelectedOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxbSelectedOutput.Enabled = False
-        Me.TxbSelectedOutput.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxbSelectedOutput.Enabled = false
+        Me.TxbSelectedOutput.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TxbSelectedOutput.ForeColor = System.Drawing.Color.White
         Me.TxbSelectedOutput.Location = New System.Drawing.Point(103, 75)
         Me.TxbSelectedOutput.Name = "TxbSelectedOutput"
-        Me.TxbSelectedOutput.ReadOnly = True
+        Me.TxbSelectedOutput.ReadOnly = true
         Me.TxbSelectedOutput.Size = New System.Drawing.Size(507, 25)
         Me.TxbSelectedOutput.TabIndex = 13
         Me.TxbSelectedOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -903,29 +905,29 @@ Partial Class Frm_Main
         'BtnSelectOutput
         '
         Me.BtnSelectOutput.BackColor = System.Drawing.Color.Transparent
-        Me.BtnSelectOutput.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.BtnSelectOutput.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.BtnSelectOutput.BorderColour = System.Drawing.Color.DimGray
-        Me.BtnSelectOutput.Enabled = False
-        Me.BtnSelectOutput.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BtnSelectOutput.HoverColour = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.BtnSelectOutput.Enabled = false
+        Me.BtnSelectOutput.FontColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
+        Me.BtnSelectOutput.HoverColour = System.Drawing.Color.FromArgb(CType(CType(52,Byte),Integer), CType(CType(52,Byte),Integer), CType(CType(52,Byte),Integer))
         Me.BtnSelectOutput.Location = New System.Drawing.Point(22, 75)
         Me.BtnSelectOutput.Name = "BtnSelectOutput"
-        Me.BtnSelectOutput.PressedColour = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
-        Me.BtnSelectOutput.ProgressColour = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BtnSelectOutput.PressedColour = System.Drawing.Color.FromArgb(CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer))
+        Me.BtnSelectOutput.ProgressColour = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(191,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.BtnSelectOutput.Size = New System.Drawing.Size(75, 25)
         Me.BtnSelectOutput.TabIndex = 11
         Me.BtnSelectOutput.Text = "Output"
         '
         'TxbSelectedFile
         '
-        Me.TxbSelectedFile.AllowDrop = True
-        Me.TxbSelectedFile.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.TxbSelectedFile.AllowDrop = true
+        Me.TxbSelectedFile.BackColor = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.TxbSelectedFile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxbSelectedFile.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxbSelectedFile.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.TxbSelectedFile.ForeColor = System.Drawing.Color.White
         Me.TxbSelectedFile.Location = New System.Drawing.Point(103, 44)
         Me.TxbSelectedFile.Name = "TxbSelectedFile"
-        Me.TxbSelectedFile.ReadOnly = True
+        Me.TxbSelectedFile.ReadOnly = true
         Me.TxbSelectedFile.Size = New System.Drawing.Size(507, 25)
         Me.TxbSelectedFile.TabIndex = 10
         Me.TxbSelectedFile.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -939,68 +941,67 @@ Partial Class Frm_Main
         Me.PbxSelectedFile.Size = New System.Drawing.Size(32, 32)
         Me.PbxSelectedFile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PbxSelectedFile.TabIndex = 2
-        Me.PbxSelectedFile.TabStop = False
+        Me.PbxSelectedFile.TabStop = false
         '
         'BtnSelectFile
         '
         Me.BtnSelectFile.BackColor = System.Drawing.Color.Transparent
-        Me.BtnSelectFile.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.BtnSelectFile.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer), CType(CType(42,Byte),Integer))
         Me.BtnSelectFile.BorderColour = System.Drawing.Color.DimGray
-        Me.BtnSelectFile.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BtnSelectFile.HoverColour = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.BtnSelectFile.FontColour = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
+        Me.BtnSelectFile.HoverColour = System.Drawing.Color.FromArgb(CType(CType(52,Byte),Integer), CType(CType(52,Byte),Integer), CType(CType(52,Byte),Integer))
         Me.BtnSelectFile.Location = New System.Drawing.Point(22, 44)
         Me.BtnSelectFile.Name = "BtnSelectFile"
-        Me.BtnSelectFile.PressedColour = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
-        Me.BtnSelectFile.ProgressColour = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BtnSelectFile.PressedColour = System.Drawing.Color.FromArgb(CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer), CType(CType(47,Byte),Integer))
+        Me.BtnSelectFile.ProgressColour = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(191,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.BtnSelectFile.Size = New System.Drawing.Size(75, 25)
         Me.BtnSelectFile.TabIndex = 0
         Me.BtnSelectFile.Text = "Browse"
         '
         'Frm_Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(685, 691)
         Me.Controls.Add(Me.LogInThemeContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = Global.DotNetRenamer.My.Resources.Resources.DNR
-        Me.MaximizeBox = False
+        Me.MaximizeBox = false
         Me.Name = "Frm_Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "                          DotNet Renamer"
         Me.TransparencyKey = System.Drawing.Color.Fuchsia
-        Me.LogInThemeContainer1.ResumeLayout(False)
-        Me.LogInThemeContainer1.PerformLayout()
-        Me.GbxPresets.ResumeLayout(False)
-        Me.GbxPresets.PerformLayout()
-        Me.TbcPresets.ResumeLayout(False)
-        Me.TpCharacters.ResumeLayout(False)
-        Me.PnlCharactersPresets.ResumeLayout(False)
-        Me.TpNamespaces.ResumeLayout(False)
-        Me.PnlNamespacesPresets.ResumeLayout(False)
-        Me.PnlNamespacesGroup.ResumeLayout(False)
-        Me.TpTypes.ResumeLayout(False)
-        Me.PnlTypesPresets.ResumeLayout(False)
-        Me.TpMethods.ResumeLayout(False)
-        Me.PnlMethodsPresets.ResumeLayout(False)
-        Me.TpProperties.ResumeLayout(False)
-        Me.PnlPropertiesPresets.ResumeLayout(False)
-        Me.TpEvents.ResumeLayout(False)
-        Me.PnlEventsPresets.ResumeLayout(False)
-        Me.TpFields.ResumeLayout(False)
-        Me.PnlFieldsPresets.ResumeLayout(False)
-        Me.TpAttributes.ResumeLayout(False)
-        Me.PnlAttributesPresets.ResumeLayout(False)
-        Me.TpParameters.ResumeLayout(False)
-        Me.PnlParametersPresets.ResumeLayout(False)
-        Me.GbxAsemblyInfos.ResumeLayout(False)
-        Me.GbxAsemblyInfos.PerformLayout()
-        Me.GbxSelectFile.ResumeLayout(False)
-        Me.GbxSelectFile.PerformLayout()
-        CType(Me.PbxSelectedFile, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
+        Me.LogInThemeContainer1.ResumeLayout(false)
+        Me.LogInThemeContainer1.PerformLayout
+        Me.GbxPresets.ResumeLayout(false)
+        Me.TbcPresets.ResumeLayout(false)
+        Me.TpCharacters.ResumeLayout(false)
+        Me.PnlCharactersPresets.ResumeLayout(false)
+        Me.TpNamespaces.ResumeLayout(false)
+        Me.PnlNamespacesPresets.ResumeLayout(false)
+        Me.PnlNamespacesGroup.ResumeLayout(false)
+        Me.TpTypes.ResumeLayout(false)
+        Me.PnlTypesPresets.ResumeLayout(false)
+        Me.TpMethods.ResumeLayout(false)
+        Me.PnlMethodsPresets.ResumeLayout(false)
+        Me.TpProperties.ResumeLayout(false)
+        Me.PnlPropertiesPresets.ResumeLayout(false)
+        Me.TpEvents.ResumeLayout(false)
+        Me.PnlEventsPresets.ResumeLayout(false)
+        Me.TpFields.ResumeLayout(false)
+        Me.PnlFieldsPresets.ResumeLayout(false)
+        Me.TpAttributes.ResumeLayout(false)
+        Me.PnlAttributesPresets.ResumeLayout(false)
+        Me.TpParameters.ResumeLayout(false)
+        Me.PnlParametersPresets.ResumeLayout(false)
+        Me.GbxAsemblyInfos.ResumeLayout(false)
+        Me.GbxAsemblyInfos.PerformLayout
+        Me.GbxSelectFile.ResumeLayout(false)
+        Me.GbxSelectFile.PerformLayout
+        CType(Me.PbxSelectedFile,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
 
-    End Sub
+End Sub
 
     Friend WithEvents GbxSelectFile As LogInGroupBox
     Friend WithEvents BtnSelectFile As LogInButton
@@ -1050,7 +1051,6 @@ Partial Class Frm_Main
     Friend WithEvents BgwRenameTask As System.ComponentModel.BackgroundWorker
     Friend WithEvents LsbMain As DotNetRenamer.XertzLoginTheme.LogInStatusBar
     Friend WithEvents LnkLblBlogSpot As System.Windows.Forms.LinkLabel
-    Friend WithEvents LblPresets As DotNetRenamer.XertzLoginTheme.LogInLabel
     Friend WithEvents ChbNamespacesRP As DotNetRenamer.XertzLoginTheme.LogInCheckBox
     Friend WithEvents ChbTypesRP As DotNetRenamer.XertzLoginTheme.LogInCheckBox
     Friend WithEvents ChbMethodsRP As DotNetRenamer.XertzLoginTheme.LogInCheckBox
@@ -1063,4 +1063,5 @@ Partial Class Frm_Main
     Friend WithEvents TxbSelectedOutput As System.Windows.Forms.TextBox
     Friend WithEvents BtnSelectOutput As DotNetRenamer.XertzLoginTheme.LogInButton
     Friend WithEvents LogInThemeContainer1 As DotNetRenamer.XertzLoginTheme.LogInThemeContainer
+    Friend WithEvents BtnExclude As DotNetRenamer.XertzLoginTheme.LogInButton
 End Class

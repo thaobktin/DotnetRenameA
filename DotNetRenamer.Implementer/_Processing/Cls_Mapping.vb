@@ -59,6 +59,7 @@ Namespace Processing
             Else
                 MemberObfuscated = _ObfMethods.Item(Member)
             End If
+
             Return MemberObfuscated
         End Function
 
@@ -156,15 +157,24 @@ Namespace Processing
         ''' INFO : CleanUp Namespaces dictionary and MethodReferences List.
         ''' </summary>
         Friend Shared Sub CleanUp()
-            If Not _ObfNamespaces.Count <> 0 Then _ObfNamespaces.Clear()
-            If Not _ObfTypes.Count <> 0 Then _ObfTypes.Clear()
-            If Not _ObfMethods.Count <> 0 Then _ObfMethods.Clear()
-            If Not _ObfGenericParameters.Count <> 0 Then _ObfGenericParameters.Clear()
-            If Not _ObfParameters.Count <> 0 Then _ObfParameters.Clear()
+            _ObfNamespaces.Clear()
+            _ObfTypes.Clear()
+            _ObfMethods.Clear()
+            _ObfGenericParameters.Clear()
+            _ObfParameters.Clear()
+            _ObfVariables.Clear()
+            _ObfProperties.Clear()
+            _ObfEvents.Clear()
+            _ObfFields.Clear()
+            'If Not _ObfNamespaces.Count <> 0 Then _ObfNamespaces.Clear()
+            'If Not _ObfTypes.Count <> 0 Then _ObfTypes.Clear()
+            'If Not _ObfMethods.Count <> 0 Then _ObfMethods.Clear()
+            'If Not _ObfGenericParameters.Count <> 0 Then _ObfGenericParameters.Clear()
+            'If Not _ObfParameters.Count <> 0 Then _ObfParameters.Clear()
             'If Not _ObfVariables.Count <> 0 Then _ObfVariables.Clear()
-            If Not _ObfProperties.Count <> 0 Then _ObfProperties.Clear()
-            If Not _ObfEvents.Count <> 0 Then _ObfEvents.Clear()
-            If Not _ObfFields.Count <> 0 Then _ObfFields.Clear()
+            'If Not _ObfProperties.Count <> 0 Then _ObfProperties.Clear()
+            'If Not _ObfEvents.Count <> 0 Then _ObfEvents.Clear()
+            'If Not _ObfFields.Count <> 0 Then _ObfFields.Clear()
         End Sub
 #End Region
 
