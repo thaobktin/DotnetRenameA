@@ -396,25 +396,6 @@ Namespace XertzLoginTheme
             Invalidate()
         End Sub
 
-        'Property Checked() As Boolean
-        '    Get
-        '        Return _Checked
-        '    End Get
-        '    Set(ByVal value As Boolean)
-        '        _Checked = value
-        '        RaiseEvent CheckedChanged(Me)
-        '        Invalidate()
-        '    End Set
-        'End Property
-
-        'Event CheckedChanged(ByVal sender As Object)
-        'Protected Overrides Sub OnClick(ByVal e As EventArgs)
-        '    MyBase.OnClick(e)
-        '    RaiseEvent CheckedChanged(Me)
-        '    _Checked = Not _Checked
-        'End Sub
-
-
         Protected Overrides Sub OnClick(e As EventArgs)
             _Checked = Not _Checked
             RaiseEvent CheckedChanged(Me, EventArgs.Empty)
@@ -430,55 +411,8 @@ Namespace XertzLoginTheme
                 Invalidate()
             End Set
         End Property
+
         Public Event CheckedChanged As EventHandler
-
-
-
-
-
-
-
-        'Protected Sub OnCheckedchanged(ByVal e As EventArgs)
-        '    _Checked = Not _Checked
-        '    RaiseEvent CheckedChanged(Me)
-        '    MyBase.OnClick(e)
-        'End Sub
-
-
-        'Public Delegate Sub CheckedChangedHandler(ByVal sender As Object, ByVal e As System.EventArgs)
-
-        '<Category("Configuration"), Browsable(True), Description("CheckedChanged")> _
-        'Public Event CheckedChanged As CheckedChangedHandler
-
-        '<Category("Configuration"), Browsable(True), Description("CheckedState")> _
-        'Public Event CheckedState(ByVal sender As Object)
-
-        'Protected Overridable Sub OnCheckedChanged(ByVal e As System.EventArgs)
-        '    RaiseEvent CheckedChanged(Me, e)
-        'End Sub
-
-        'Property Checked() As Boolean
-        '    Get
-        '        Return _Checked
-        '    End Get
-        '    Set(ByVal value As Boolean)
-        '        _Checked = value
-        '        OnCheckedChanged(New CheckedArgs(_Checked))
-        '        Invalidate()
-        '    End Set
-        'End Property
-
-        'Private _CheckState As CheckState
-        'Public Property CheckState As CheckState
-        '    Get
-        '        Return _CheckState
-        '    End Get
-        '    Set(ByVal V As CheckState)
-        '        _CheckState = V
-        '        RaiseEvent CheckedState(Me)
-        '        Invalidate()
-        '    End Set
-        'End Property
 
         Protected Overrides Sub OnResize(e As EventArgs)
             MyBase.OnResize(e)

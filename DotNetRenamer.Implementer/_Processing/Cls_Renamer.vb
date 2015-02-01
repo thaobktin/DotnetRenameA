@@ -1,8 +1,10 @@
 ﻿Imports dnlib.DotNet
-Imports dnlib.DotNet.Emit
+Imports dnlib.DotNet.Extensions
 Imports DotNetRenamer.Implementer.Context
 Imports DotNetRenamer.Helper.RandomizeHelper
 Imports DotNetRenamer.Helper.CecilHelper
+Imports dnlib.DotNet.Emit
+Imports System.Runtime.CompilerServices
 
 Namespace Processing
     ''' <summary>

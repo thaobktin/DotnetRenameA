@@ -111,15 +111,17 @@ Namespace Processing
         ''' </summary>
         ''' <param name="type"></param>
         Public Sub ProcessMethods(type As TypeDef)
-            For Each method As MethodDef In type.Methods
-                If Cls_DnlibHelper.IsRenamable(method) Then
-                    If Not Cls_DnlibHelper.GetAccessorMethods(type).Contains(method) Then
-                        ProcessMethod(method, "Methods")
+            If _RenamingAccept.Methods OrElse _RenamingAccept.Parameters Then
+                For Each method As MethodDef In type.Methods
+                    If Cls_DnlibHelper.IsRenamable(method) Then
+                        If Not Cls_DnlibHelper.GetAccessorMethods(type).Contains(method) Then
+                            ProcessMethod(method, "Methods")
+                        End If
+                    Else
+                        ProcessParameters(method)
                     End If
-                Else
-                    ProcessParameters(method)
-                End If
-            Next
+                Next
+            End If
         End Sub
 
 
@@ -132,8 +134,12 @@ Namespace Processing
                 For Each propDef As PropertyDef In type.Properties
                     If Cls_DnlibHelper.IsRenamable(propDef) Then
 
-                        Dim obfuscatedN = Cls_Randomizer.GenerateNew()
+                        Dim obfuscatedN = propDef.Name
                         Dim originalN = propDef.Name
+
+                        If _RenamingAccept.Properties Then
+                            obfuscatedN = Cls_Randomizer.GenerateNew()
+                        End If
 
                         Cls_Renamer.RenameProperty(propDef, obfuscatedN)
                         Cls_Renamer.RenameInitializeComponentsValues(propDef.DeclaringType, obfuscatedN, originalN, True)
@@ -169,7 +175,6 @@ Namespace Processing
                     End If
                 Next
             End If
-
         End Sub
 
         ''' <summary>
@@ -187,27 +192,26 @@ Namespace Processing
                             Cls_Renamer.RenameEvent(events, Cls_Randomizer.GenerateNew())
                         End If
 
-                        If _RenamingAccept.Methods Then
-                            Dim flag = "Event"
-                            If Not events.AddMethod Is Nothing Then ProcessMethod(events.AddMethod, flag)
-                            If Not events.RemoveMethod Is Nothing Then ProcessMethod(events.RemoveMethod, flag)
-
-                            For Each def In events.OtherMethods
-                                ProcessMethod(def, flag)
-                            Next
-                        End If
+                        Dim flag = "Event"
+                        If Not events.AddMethod Is Nothing Then ProcessMethod(events.AddMethod, flag)
+                        If Not events.RemoveMethod Is Nothing Then ProcessMethod(events.RemoveMethod, flag)
+                        For Each def In events.OtherMethods
+                            ProcessMethod(def, flag)
+                        Next
                     End If
                 Next
             End If
         End Sub
 
-        Private Sub ProcessMethod(mDef As MethodDef, DestNode As String)
+        Private Sub ProcessMethod(mDef As MethodDef, DestNodeName$)
             Dim meth As MethodDef = mDef
-            If DestNode = "Event" Then
-                meth = Cls_Renamer.RenameMethod(meth.DeclaringType, meth)
-            Else
-                If Cls_DnlibHelper.IsRenamable(meth) Then
+            If _RenamingAccept.Methods Then
+                If DestNodeName = "Event" Then
                     meth = Cls_Renamer.RenameMethod(meth.DeclaringType, meth)
+                Else
+                    If Cls_DnlibHelper.IsRenamable(meth) Then
+                        meth = Cls_Renamer.RenameMethod(meth.DeclaringType, meth)
+                    End If
                 End If
             End If
             ProcessParameters(meth)
@@ -217,7 +221,6 @@ Namespace Processing
             If _RenamingAccept.Parameters Then
                 Cls_Renamer.RenameParameters(Meth)
             End If
-
             If _RenamingAccept.Variables Then
                 Cls_Renamer.RenameVariables(Meth)
             End If

@@ -8,6 +8,7 @@ Public Class Frm_Exclusion
 #Region " Fields "
     Private _FilePath$ = String.Empty
     Private _excludeList As Cls_ExcludeList
+    Private _Tn As Cls_ExclusionTreeview
 #End Region
 
 #Region " Events "
@@ -19,10 +20,10 @@ Public Class Frm_Exclusion
 #End Region
 
 #Region " Constructor "
-    Sub New(FilePath$)
+    Sub New(Tn As Cls_ExclusionTreeview)
         InitializeComponent()
-        _FilePath = FilePath
-        If Not BgwExclusion.IsBusy Then BgwExclusion.RunWorkerAsync()
+        _Tn = Tn
+        If Not BgwExclusion.IsBusy Then BgwExclusion.RunWorkerAsync(Tn)
     End Sub
 #End Region
 
@@ -31,6 +32,7 @@ Public Class Frm_Exclusion
         _excludeList = New Cls_ExcludeList
         RaiseEvent OnShowingExclusionInfos(_excludeList)
     End Sub
+
     Public Sub FinalizeExcludeList()
         _excludeList.CleanUp()
         RaiseEvent OnShowingExclusionInfos(_excludeList)
@@ -41,7 +43,7 @@ Public Class Frm_Exclusion
     End Sub
 
     Private Sub BgwExclusion_DoWork(sender As Object, e As DoWorkEventArgs) Handles BgwExclusion.DoWork
-        e.Result = Cls_Exclusion.LoadTreeNode(_FilePath)
+        e.Result = TryCast(e.Argument, Cls_ExclusionTreeview).LoadTreeNode
     End Sub
 
     Private Sub BgwExclusion_RunWorkerCompleted(sender As Object, e As RunWorkerCompletedEventArgs) Handles BgwExclusion.RunWorkerCompleted
@@ -49,14 +51,14 @@ Public Class Frm_Exclusion
     End Sub
 
     Private Sub TreeView1_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TvExclusion.AfterSelect
-        If Not Cls_Exclusion.isRenamable(e.Node.Tag) Then
+        If Not _Tn.isRenamable(e.Node.Tag) Then
             ChbExclusion.Checked = False
             ChbAllEntities.Checked = False
             GbxExclusion.Enabled = False
         ElseIf (Not e.Node.Tag Is Nothing) Then
-            ChbExclusion.Checked = Cls_Exclusion.isExclude(e.Node.Tag)
-            ChbAllEntities.Checked = Cls_Exclusion.getEntitiesVal(e.Node.Tag)
-            GbxExclusion.Enabled = Cls_Exclusion.isTypedef(e.Node.Tag)
+            ChbExclusion.Checked = _Tn.isExclude(e.Node.Tag)
+            ChbAllEntities.Checked = _Tn.getEntitiesVal(e.Node.Tag)
+            GbxExclusion.Enabled = _Tn.isTypedef(e.Node.Tag)
             ChbAllEntities.Enabled = ChbExclusion.Checked
         Else
             GbxExclusion.Enabled = False
@@ -66,7 +68,7 @@ Public Class Frm_Exclusion
 
     Private Sub IncludeAllChildNodes(treeNode As TreeNode, nodeChecked As Boolean)
         For Each node As TreeNode In treeNode.Nodes
-            If Cls_Exclusion.isRenamable(node.Tag) Then
+            If _Tn.isRenamable(node.Tag) Then
                 node.Tag.Exclude = nodeChecked
                 ColorNode(node, nodeChecked)
                 If node.Nodes.Count > 0 Then
@@ -78,7 +80,7 @@ Public Class Frm_Exclusion
 
     Private Sub IncludeEntitiesChildNodes(treeNode As TreeNode, nodeChecked As Boolean)
         For Each node As TreeNode In treeNode.Nodes
-            If Cls_Exclusion.isRenamable(node.Tag) Then
+            If _Tn.isRenamable(node.Tag) Then
                 node.Tag.Exclude = nodeChecked
                 node.Tag.AllEntities = nodeChecked
                 ColorNode(node, nodeChecked)
@@ -110,7 +112,6 @@ Public Class Frm_Exclusion
             IncludeAllChildNodes(TvExclusion.SelectedNode, False)
             IncludeEntitiesChildNodes(TvExclusion.SelectedNode, False)
             ChbAllEntities.Checked = False
-            'TvExclusion.SelectedNode.Tag.AllEntities = False
         End If
     End Sub
 

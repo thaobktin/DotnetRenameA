@@ -2,17 +2,25 @@
 Imports System.Windows.Forms
 Imports DotNetRenamer.Helper.CecilHelper
 Imports System.Drawing
+Imports System.ComponentModel
 
 Namespace Exclusion
-    Public Class Cls_Exclusion
+    Public Class Cls_ExclusionTreeview
 
 #Region " Fields "
-        Private Shared _AssDef As AssemblyDef = Nothing
+        Private _AssDef As AssemblyDef = Nothing
+        Private _filepath$
+#End Region
+
+#Region " Constructor "
+        Sub New(FilePath$)
+            _FilePath = FilePath$
+        End Sub
 #End Region
 
 #Region " Methods "
-        Public Shared Function LoadTreeNode(FilePath$) As TreeNode
-            _AssDef = AssemblyDef.Load(FilePath)
+        Public Function LoadTreeNode() As TreeNode
+            _AssDef = AssemblyDef.Load(_filepath)
 
             Dim assNode As New TreeNode(_AssDef.FullName)
             assNode.ExpandAll()
@@ -54,7 +62,7 @@ Namespace Exclusion
             Return assNode
         End Function
 
-        Private Shared Sub CreateMembers(ByRef OriginalType As TypeDef, ByRef DestNode As TreeNode)
+        Private Sub CreateMembers(ByRef OriginalType As TypeDef, ByRef DestNode As TreeNode)
 
             DestNode.Tag = New Cls_ExclusionState(False, OriginalType, Cls_ExclusionState.mType.Types, False)
             SetImageKey(DestNode, GetTypeImage(OriginalType))
@@ -104,7 +112,7 @@ Namespace Exclusion
             Next
         End Sub
 
-        Private Shared Sub CreateMethodNode(mDef As MethodDef, DestNode As TreeNode)
+        Private Sub CreateMethodNode(mDef As MethodDef, DestNode As TreeNode)
             Dim methodNode As New TreeNode(mDef.Name) With { _
                 .Tag = New Cls_ExclusionState(False, mDef, Cls_ExclusionState.mType.Methods, False)}
             SetImageKey(methodNode, GetMethodImage(mDef))
@@ -121,7 +129,7 @@ Namespace Exclusion
             DestNode.Nodes.Add(methodNode)
         End Sub
 
-        Private Shared Function GetMethodImage(mdef As MethodDef) As String
+        Private Function GetMethodImage(mdef As MethodDef) As String
             Dim str = "Method.png"
             If mdef.IsConstructor Then
                 str = "Constructor.png"
@@ -131,7 +139,7 @@ Namespace Exclusion
             Return str
         End Function
 
-        Private Shared Function GetTypeImage(mdef As TypeDef) As String
+        Private Function GetTypeImage(mdef As TypeDef) As String
             Dim str = "class.png"
             If mdef.IsInterface Then
                 str = "interface.png"
@@ -147,16 +155,17 @@ Namespace Exclusion
             Return str
         End Function
 
-        Private Shared Sub SetImageKey(node As TreeNode, imageKey$)
+        Private Sub SetImageKey(node As TreeNode, imageKey$)
             node.ImageKey = imageKey
             node.SelectedImageKey = imageKey
         End Sub
 
-        Public Shared Function isRenamable(Obj As Object) As Boolean
+        Public Function isRenamable(Obj As Object) As Boolean
             If Obj Is Nothing Then Return False
+
             Dim b As Boolean = False
             If TypeOf TryCast(Obj.member, MethodDef) Is MethodDef Then
-                b = Cls_DnlibHelper.IsRenamable(TryCast(Obj.member, MethodDef), True)
+                b = Cls_DnlibHelper.IsRenamable(TryCast(Obj.member, MethodDef))
             ElseIf TypeOf TryCast(Obj.member, TypeDef) Is TypeDef Then
                 b = Cls_DnlibHelper.IsRenamable(TryCast(Obj.member, TypeDef))
             ElseIf TypeOf TryCast(Obj.member, EventDef) Is EventDef Then
@@ -169,17 +178,17 @@ Namespace Exclusion
             Return b
         End Function
 
-        Public Shared Function isTypedef(n As Object) As Boolean
+        Public Function isTypedef(n As Object) As Boolean
             If n Is Nothing Then Return False
             Return TypeOf TryCast(n.member, TypeDef) Is TypeDef
         End Function
 
-        Public Shared Function getEntitiesVal(n As Object) As Boolean
+        Public Function getEntitiesVal(n As Object) As Boolean
             If n Is Nothing Then Return False
             Return CBool(n.AllEntities)
         End Function
 
-        Public Shared Function isExclude(n As Object) As Boolean
+        Public Function isExclude(n As Object) As Boolean
             If n Is Nothing Then Return False
             Return n.exclude
         End Function

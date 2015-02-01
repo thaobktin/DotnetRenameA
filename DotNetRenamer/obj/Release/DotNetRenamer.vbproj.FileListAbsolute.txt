@@ -344,4 +344,20 @@ D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer\obj\Release\DotNetRenamer.Frm_Exc
 D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer\obj\Release\DotNetRenamer.vbproj.GenerateResource.Cache
 D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer\obj\Release\DotNetRenamer.exe
 D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer\obj\Release\DotNetRenamer.pdb
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer\obj\Release\DotNetRenamer.Frm_Exclusion.resources
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\bin\Release\DotNetRenamer.exe.config
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\obj\Release\DotNetRenamer.exe
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\obj\Release\DotNetRenamer.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\bin\Release\DotNetRenamer.exe
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\bin\Release\DotNetRenamer.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\bin\Release\DotNetRenamer.Helper.dll
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\bin\Release\DotNetRenamer.Implementer.dll
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\bin\Release\dnlib.dll
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\bin\Release\DotNetRenamer.Helper.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\bin\Release\DotNetRenamer.Implementer.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\obj\Release\DotNetRenamer.vbprojResolveAssemblyReference.cache
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\obj\Release\DotNetRenamer.Frm_Main.resources
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\obj\Release\DotNetRenamer.Resources.resources
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\obj\Release\DotNetRenamer.Frm_Exclusion.resources
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer\obj\Release\DotNetRenamer.vbproj.GenerateResource.Cache

@@ -14,6 +14,7 @@ Namespace Context
         Public Events As Boolean
         Public Variables As Boolean
         Public Parameters As Boolean
+        Public ResourcesContent As Boolean
 
         Public ReplaceNamespacesSetting As ReplaceNamespaces = CBool(ReplaceNamespaces.ByDefault)
         Public RenameRuleSetting As RenameRule = RenameRule.Full
@@ -64,6 +65,7 @@ Namespace Context
             Events = False
             Variables = False
             Parameters = False
+            ResourcesContent = False
         End Sub
 #End Region
 

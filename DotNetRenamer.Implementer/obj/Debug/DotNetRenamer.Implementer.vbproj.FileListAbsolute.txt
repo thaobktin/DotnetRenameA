@@ -36,15 +36,3 @@ D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\bin\Debug\DotNet
 D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\bin\Debug\DotNetRenamer.Helper.dll
 D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\bin\Debug\DotNetRenamer.Core20Reader.pdb
 D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\bin\Debug\DotNetRenamer.Helper.pdb
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Debug\DotNetRenamer.Implementer.dll
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Debug\DotNetRenamer.Implementer.pdb
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Debug\dnlib.dll
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Debug\DotNetRenamer.Core20Reader.dll
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Debug\DotNetRenamer.Helper.dll
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Debug\DotNetRenamer.Core20Reader.pdb
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Debug\DotNetRenamer.Helper.pdb
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\obj\Debug\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\obj\Debug\DotNetRenamer.Implementer.Resources.resources
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\obj\Debug\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\obj\Debug\DotNetRenamer.Implementer.dll
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\obj\Debug\DotNetRenamer.Implementer.pdb

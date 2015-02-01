@@ -1,7 +1,10 @@
 ﻿Imports System.Reflection
 Imports DotNetRenamer.Core20Reader
 Imports DotNetRenamer.Helper.AssemblyHelper
+Imports DotNetRenamer.Implementer.Exclusion
 Imports System.IO
+Imports System.Windows.Forms
+Imports DotNetRenamer.Implementer.Context.Cls_Parameters
 
 Namespace Analyzer
 
@@ -27,7 +30,6 @@ Namespace Analyzer
         Public Property inputFile As String
         Public Property outputFile As String
         Public Property currentFile As String
-        Public Property logdir As String
 #End Region
 
 #Region " Initialize "
@@ -93,8 +95,9 @@ Namespace Analyzer
             Return _isWpfProgram
         End Function
 
-
-
+        Public Function getTreeViewHandler() As Cls_ExclusionTreeview
+            Return New Cls_ExclusionTreeview(_inputFile)
+        End Function
 #End Region
 
     End Class

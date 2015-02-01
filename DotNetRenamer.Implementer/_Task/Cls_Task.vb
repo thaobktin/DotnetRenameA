@@ -9,6 +9,13 @@ Namespace Task
         Private _NRenamed, _TRenamed, _MRenamed, _PRenamed, _GRenamed, _ERenamed, _FRenamed, _PaRenamed, _VRenamed As Integer
 #End Region
 
+#Region " Enumerations "
+        Public Enum TaskType
+            windows = 0
+            cmd = 1
+        End Enum
+#End Region
+
 #Region " Property "
         ReadOnly Property Result As Cls_TaskResult
             Get
@@ -18,9 +25,8 @@ Namespace Task
 #End Region
 
 #Region " Constructor "
-        Sub New(Parameters As Cls_Parameters, RenamerState As Cls_RenamerState)
-            MyBase.New(Parameters, RenamerState)
-            '_Log = New Cls_Log(Parameters.logDir)
+        Sub New(Parameters As Cls_Parameters, RenamerState As Cls_RenamerState, Optional ByVal TaskT As TaskType = TaskType.windows)
+            MyBase.New(Parameters, RenamerState, TaskT)
             _Result = New Cls_TaskResult From {{"Namespace", 0}, _
                                                {"Type", 0}, _
                                                {"Method", 0}, _
@@ -36,7 +42,7 @@ Namespace Task
 #Region " Methods "
         Public Sub StartTask()
             ReadAssembly()
-            RenameResourceContent()
+            If parameters.RenamingAccept.ResourcesContent Then RenameResourceContent()
             RenameAssembly()
             WriteAssembly()
             CleanUp()

@@ -73,7 +73,7 @@ Namespace WinConsole
         Private Sub StartCmdTask(param As Cls_Parameters)
             Cls_Settings.SetDefault()
             Try
-                _Task = New Cls_Task(param, Cls_Settings.GetConfig(Cls_Settings.GetIntMode(_mode)))
+                _Task = New Cls_Task(param, Cls_Settings.GetConfig(Cls_Settings.GetIntMode(_mode)), Cls_Task.TaskType.cmd)
                 Console.WriteLine(vbNewLine & "######################## Start Task with : " & _mode & " Mode" & vbNewLine)
                 _Task.StartTask()
                 Console.WriteLine(vbNewLine & "######################## End Task !" & vbNewLine)

@@ -1,5 +1,8 @@
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\bin\Debug\DotNetRenamer.Helper.dll
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\bin\Debug\DotNetRenamer.Helper.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\bin\Debug\Mono.Cecil.dll
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\bin\Debug\Mono.Cecil.pdb
+D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.vbprojResolveAssemblyReference.cache
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.Resources.resources
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.vbproj.GenerateResource.Cache
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.dll
@@ -20,4 +23,3 @@ D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Helper\obj\Debug\DotNetRenam
 D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.vbproj.GenerateResource.Cache
 D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.dll
 D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.pdb
-D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Helper\bin\Debug\dnlib.dll
