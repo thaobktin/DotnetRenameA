@@ -2,7 +2,7 @@
 
 # Description
 
-DNR is a open source obfuscator/Renamer which use MonoCecil library for .NET applications !
+DNR is a open source obfuscator/Renamer which use Dnlib library for .NET applications !
 This project is based on the [DotNet Patcher](http://3dotdevcoder.blogspot.fr/2014/04/dotnet-patcher.html)'s renamer library 
 
 You can use these 2 libraries separately without the DotNetRenamer GUI
@@ -28,6 +28,7 @@ You can use these 2 libraries separately without the DotNetRenamer GUI
 * Selecting encoding chars type : Alphabetic, Dots, Invisible, Chinese, Japanese
 * Renaming : Namespaces, Types, Methods, Properties, Fields, Custom Attributes, Events, Parameters, Resources content ..... 
 * Displays number of renamed members
+* Managing exclusion rules (exclusion by types and entities)
 * Command line usage with 3 presets : Full, Medium, Customize (Drag&Drop, cmd or .bat file)
 * Retrieve a renamer scheme from the DotNetRenamer.ini file
 

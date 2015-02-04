@@ -1,7 +1,7 @@
 ﻿Imports dnlib.DotNet
 
 Namespace CecilHelper
-    Public NotInheritable Class Cls_CecilHelper
+    Public NotInheritable Class Cls_DnlibHelper
 
 #Region " Methods "
         ''' <summary>
@@ -22,7 +22,7 @@ Namespace CecilHelper
         ''' </summary>
         ''' <param name="method"></param>
         Public Shared Function IsRenamable(method As MethodDef) As Boolean
-            Return Not (method.IsRuntimeSpecialName OrElse method.IsRuntime OrElse method.IsSpecialName OrElse method.IsConstructor OrElse method.HasOverrides OrElse method.IsVirtual OrElse method.IsAbstract OrElse method.Name.EndsWith("GetEnumerator"))
+            Return method IsNot Nothing AndAlso Not (method.IsRuntimeSpecialName OrElse method.IsRuntime OrElse method.IsSpecialName OrElse method.IsConstructor OrElse method.HasOverrides OrElse method.IsVirtual OrElse method.IsAbstract OrElse method.Name.EndsWith("GetEnumerator"))
         End Function
 
         ''' <summary>
@@ -38,7 +38,6 @@ Namespace CecilHelper
         ''' </summary>
         ''' <param name="prop"></param>
         Public Shared Function IsRenamable(prop As PropertyDef) As Boolean
-            'OrElse prop.DeclaringType.Name.Contains("AnonymousType")
             Return Not ((prop.IsSpecialName OrElse prop.IsRuntimeSpecialName))
         End Function
 
@@ -47,19 +46,38 @@ Namespace CecilHelper
         ''' </summary>
         ''' <param name="field"></param>
         Public Shared Function IsRenamable(field As FieldDef) As Boolean
-            'Return If((Not field.IsRuntimeSpecialName AndAlso Not field.DeclaringType.HasGenericParameters) And Not field.IsPInvokeImpl AndAlso Not field.IsSpecialName, True, False)
             If (Not field.IsRuntimeSpecialName AndAlso Not field.DeclaringType.HasGenericParameters) And Not field.IsPinvokeImpl AndAlso Not field.IsSpecialName Then
                 Return True
             End If
             Return False
         End Function
 
-        Public Shared Function IsGetter(method As MethodDef) As Boolean
-            Return method.DeclaringType.Properties.Any(Function(x) x.GetMethod Is method)
-        End Function
-
-        Public Shared Function IsSetter(method As MethodDef) As Boolean
-            Return method.DeclaringType.Properties.Any(Function(x) x.SetMethod Is method)
+        Public Shared Function GetAccessorMethods(ByVal type As TypeDef) As List(Of MethodDef)
+            Dim list As New List(Of MethodDef)
+            Dim def As PropertyDef
+            For Each def In type.Properties
+                list.Add(def.GetMethod)
+                list.Add(def.SetMethod)
+                If def.HasOtherMethods Then
+                    Dim def2 As MethodDef
+                    For Each def2 In def.OtherMethods
+                        list.Add(def2)
+                    Next
+                End If
+            Next
+            Dim def3 As EventDef
+            For Each def3 In type.Events
+                list.Add(def3.AddMethod)
+                list.Add(def3.RemoveMethod)
+                list.Add(def3.InvokeMethod)
+                If def3.HasOtherMethods Then
+                    Dim def4 As MethodDef
+                    For Each def4 In def3.OtherMethods
+                        list.Add(def4)
+                    Next
+                End If
+            Next
+            Return list
         End Function
 
         Public Shared Function FindType(moduleDef As ModuleDef, Name As String) As TypeDef

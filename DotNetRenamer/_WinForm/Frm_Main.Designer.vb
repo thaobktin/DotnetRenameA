@@ -29,7 +29,7 @@ Partial Class Frm_Main
         Me.LnkLblBlogSpot = New System.Windows.Forms.LinkLabel()
         Me.LsbMain = New DotNetRenamer.XertzLoginTheme.LogInStatusBar()
         Me.GbxPresets = New DotNetRenamer.XertzLoginTheme.LogInGroupBox()
-        Me.LblPresets = New DotNetRenamer.XertzLoginTheme.LogInLabel()
+        Me.BtnExclude = New DotNetRenamer.XertzLoginTheme.LogInButton()
         Me.BtnStart = New DotNetRenamer.XertzLoginTheme.LogInButton()
         Me.TbcPresets = New DotNetRenamer.XertzLoginTheme.LogInTabControl()
         Me.TpCharacters = New System.Windows.Forms.TabPage()
@@ -51,6 +51,9 @@ Partial Class Frm_Main
         Me.ChbTypesRP = New DotNetRenamer.XertzLoginTheme.LogInCheckBox()
         Me.TpMethods = New System.Windows.Forms.TabPage()
         Me.PnlMethodsPresets = New System.Windows.Forms.Panel()
+        Me.PnlMethodsGroup = New System.Windows.Forms.Panel()
+        Me.ChbRenameVariablesMethods = New DotNetRenamer.XertzLoginTheme.LogInCheckBox()
+        Me.ChbRenameParametersMethods = New DotNetRenamer.XertzLoginTheme.LogInCheckBox()
         Me.ChbMethodsRP = New DotNetRenamer.XertzLoginTheme.LogInCheckBox()
         Me.TpProperties = New System.Windows.Forms.TabPage()
         Me.PnlPropertiesPresets = New System.Windows.Forms.Panel()
@@ -65,8 +68,8 @@ Partial Class Frm_Main
         Me.PnlAttributesPresets = New System.Windows.Forms.Panel()
         Me.ChbAttributesRP = New DotNetRenamer.XertzLoginTheme.LogInCheckBox()
         Me.TpParameters = New System.Windows.Forms.TabPage()
-        Me.PnlParametersPresets = New System.Windows.Forms.Panel()
-        Me.ChbParametersRP = New DotNetRenamer.XertzLoginTheme.LogInCheckBox()
+        Me.PnlResourcesPresets = New System.Windows.Forms.Panel()
+        Me.ChbResourcesRP = New DotNetRenamer.XertzLoginTheme.LogInCheckBox()
         Me.CbxPresets = New DotNetRenamer.XertzLoginTheme.LogInComboBox()
         Me.GbxAsemblyInfos = New DotNetRenamer.XertzLoginTheme.LogInGroupBox()
         Me.LblType = New DotNetRenamer.XertzLoginTheme.LogInLabel()
@@ -97,6 +100,7 @@ Partial Class Frm_Main
         Me.PnlTypesPresets.SuspendLayout()
         Me.TpMethods.SuspendLayout()
         Me.PnlMethodsPresets.SuspendLayout()
+        Me.PnlMethodsGroup.SuspendLayout()
         Me.TpProperties.SuspendLayout()
         Me.PnlPropertiesPresets.SuspendLayout()
         Me.TpEvents.SuspendLayout()
@@ -106,7 +110,7 @@ Partial Class Frm_Main
         Me.TpAttributes.SuspendLayout()
         Me.PnlAttributesPresets.SuspendLayout()
         Me.TpParameters.SuspendLayout()
-        Me.PnlParametersPresets.SuspendLayout()
+        Me.PnlResourcesPresets.SuspendLayout()
         Me.GbxAsemblyInfos.SuspendLayout()
         Me.GbxSelectFile.SuspendLayout()
         CType(Me.PbxSelectedFile, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -177,7 +181,7 @@ Partial Class Frm_Main
         'GbxPresets
         '
         Me.GbxPresets.BorderColour = System.Drawing.SystemColors.ButtonShadow
-        Me.GbxPresets.Controls.Add(Me.LblPresets)
+        Me.GbxPresets.Controls.Add(Me.BtnExclude)
         Me.GbxPresets.Controls.Add(Me.BtnStart)
         Me.GbxPresets.Controls.Add(Me.TbcPresets)
         Me.GbxPresets.Controls.Add(Me.CbxPresets)
@@ -192,18 +196,20 @@ Partial Class Frm_Main
         Me.GbxPresets.Text = "Presets"
         Me.GbxPresets.TextColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         '
-        'LblPresets
+        'BtnExclude
         '
-        Me.LblPresets.AutoSize = True
-        Me.LblPresets.BackColor = System.Drawing.Color.Transparent
-        Me.LblPresets.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.LblPresets.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LblPresets.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LblPresets.Location = New System.Drawing.Point(421, 49)
-        Me.LblPresets.Name = "LblPresets"
-        Me.LblPresets.Size = New System.Drawing.Size(214, 15)
-        Me.LblPresets.TabIndex = 8
-        Me.LblPresets.Text = "You can't change presets in this mode !"
+        Me.BtnExclude.BackColor = System.Drawing.Color.Transparent
+        Me.BtnExclude.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.BtnExclude.BorderColour = System.Drawing.Color.DimGray
+        Me.BtnExclude.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BtnExclude.HoverColour = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.BtnExclude.Location = New System.Drawing.Point(333, 44)
+        Me.BtnExclude.Name = "BtnExclude"
+        Me.BtnExclude.PressedColour = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
+        Me.BtnExclude.ProgressColour = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BtnExclude.Size = New System.Drawing.Size(120, 26)
+        Me.BtnExclude.TabIndex = 9
+        Me.BtnExclude.Text = "Exclusion rules (0)"
         '
         'BtnStart
         '
@@ -499,11 +505,51 @@ Partial Class Frm_Main
         '
         'PnlMethodsPresets
         '
+        Me.PnlMethodsPresets.Controls.Add(Me.PnlMethodsGroup)
         Me.PnlMethodsPresets.Controls.Add(Me.ChbMethodsRP)
         Me.PnlMethodsPresets.Location = New System.Drawing.Point(6, 6)
         Me.PnlMethodsPresets.Name = "PnlMethodsPresets"
         Me.PnlMethodsPresets.Size = New System.Drawing.Size(633, 135)
         Me.PnlMethodsPresets.TabIndex = 4
+        '
+        'PnlMethodsGroup
+        '
+        Me.PnlMethodsGroup.Controls.Add(Me.ChbRenameVariablesMethods)
+        Me.PnlMethodsGroup.Controls.Add(Me.ChbRenameParametersMethods)
+        Me.PnlMethodsGroup.Location = New System.Drawing.Point(0, 29)
+        Me.PnlMethodsGroup.Name = "PnlMethodsGroup"
+        Me.PnlMethodsGroup.Size = New System.Drawing.Size(633, 60)
+        Me.PnlMethodsGroup.TabIndex = 7
+        '
+        'ChbRenameVariablesMethods
+        '
+        Me.ChbRenameVariablesMethods.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ChbRenameVariablesMethods.BorderColour = System.Drawing.Color.DimGray
+        Me.ChbRenameVariablesMethods.Checked = True
+        Me.ChbRenameVariablesMethods.CheckedColour = System.Drawing.Color.BlueViolet
+        Me.ChbRenameVariablesMethods.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ChbRenameVariablesMethods.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ChbRenameVariablesMethods.Location = New System.Drawing.Point(336, 18)
+        Me.ChbRenameVariablesMethods.Name = "ChbRenameVariablesMethods"
+        Me.ChbRenameVariablesMethods.Size = New System.Drawing.Size(103, 22)
+        Me.ChbRenameVariablesMethods.TabIndex = 3
+        Me.ChbRenameVariablesMethods.Tag = "1"
+        Me.ChbRenameVariablesMethods.Text = "Variables"
+        '
+        'ChbRenameParametersMethods
+        '
+        Me.ChbRenameParametersMethods.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ChbRenameParametersMethods.BorderColour = System.Drawing.Color.DimGray
+        Me.ChbRenameParametersMethods.Checked = True
+        Me.ChbRenameParametersMethods.CheckedColour = System.Drawing.Color.BlueViolet
+        Me.ChbRenameParametersMethods.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ChbRenameParametersMethods.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ChbRenameParametersMethods.Location = New System.Drawing.Point(58, 18)
+        Me.ChbRenameParametersMethods.Name = "ChbRenameParametersMethods"
+        Me.ChbRenameParametersMethods.Size = New System.Drawing.Size(132, 22)
+        Me.ChbRenameParametersMethods.TabIndex = 2
+        Me.ChbRenameParametersMethods.Tag = "0"
+        Me.ChbRenameParametersMethods.Text = "Parameters"
         '
         'ChbMethodsRP
         '
@@ -664,36 +710,36 @@ Partial Class Frm_Main
         '
         Me.TpParameters.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.TpParameters.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TpParameters.Controls.Add(Me.PnlParametersPresets)
+        Me.TpParameters.Controls.Add(Me.PnlResourcesPresets)
         Me.TpParameters.Location = New System.Drawing.Point(4, 36)
         Me.TpParameters.Name = "TpParameters"
         Me.TpParameters.Padding = New System.Windows.Forms.Padding(3)
         Me.TpParameters.Size = New System.Drawing.Size(647, 149)
         Me.TpParameters.TabIndex = 8
-        Me.TpParameters.Text = "Parameters"
+        Me.TpParameters.Text = "Resources"
         '
-        'PnlParametersPresets
+        'PnlResourcesPresets
         '
-        Me.PnlParametersPresets.Controls.Add(Me.ChbParametersRP)
-        Me.PnlParametersPresets.Location = New System.Drawing.Point(6, 6)
-        Me.PnlParametersPresets.Name = "PnlParametersPresets"
-        Me.PnlParametersPresets.Size = New System.Drawing.Size(633, 135)
-        Me.PnlParametersPresets.TabIndex = 6
+        Me.PnlResourcesPresets.Controls.Add(Me.ChbResourcesRP)
+        Me.PnlResourcesPresets.Location = New System.Drawing.Point(6, 6)
+        Me.PnlResourcesPresets.Name = "PnlResourcesPresets"
+        Me.PnlResourcesPresets.Size = New System.Drawing.Size(633, 135)
+        Me.PnlResourcesPresets.TabIndex = 6
         '
-        'ChbParametersRP
+        'ChbResourcesRP
         '
-        Me.ChbParametersRP.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.ChbParametersRP.BorderColour = System.Drawing.Color.DimGray
-        Me.ChbParametersRP.Checked = True
-        Me.ChbParametersRP.CheckedColour = System.Drawing.Color.BlueViolet
-        Me.ChbParametersRP.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ChbParametersRP.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ChbParametersRP.Location = New System.Drawing.Point(0, 0)
-        Me.ChbParametersRP.Name = "ChbParametersRP"
-        Me.ChbParametersRP.Size = New System.Drawing.Size(83, 22)
-        Me.ChbParametersRP.TabIndex = 11
-        Me.ChbParametersRP.Tag = "Parameters"
-        Me.ChbParametersRP.Text = "Rename"
+        Me.ChbResourcesRP.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.ChbResourcesRP.BorderColour = System.Drawing.Color.DimGray
+        Me.ChbResourcesRP.Checked = True
+        Me.ChbResourcesRP.CheckedColour = System.Drawing.Color.BlueViolet
+        Me.ChbResourcesRP.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ChbResourcesRP.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ChbResourcesRP.Location = New System.Drawing.Point(0, 0)
+        Me.ChbResourcesRP.Name = "ChbResourcesRP"
+        Me.ChbResourcesRP.Size = New System.Drawing.Size(135, 22)
+        Me.ChbResourcesRP.TabIndex = 11
+        Me.ChbResourcesRP.Tag = "Resources"
+        Me.ChbResourcesRP.Text = "Rename content"
         '
         'CbxPresets
         '
@@ -707,9 +753,9 @@ Partial Class Frm_Main
         Me.CbxPresets.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CbxPresets.Items.AddRange(New Object() {"Full", "Medium", "Customize"})
         Me.CbxPresets.LineColour = System.Drawing.Color.BlueViolet
-        Me.CbxPresets.Location = New System.Drawing.Point(278, 44)
+        Me.CbxPresets.Location = New System.Drawing.Point(207, 44)
         Me.CbxPresets.Name = "CbxPresets"
-        Me.CbxPresets.Size = New System.Drawing.Size(115, 26)
+        Me.CbxPresets.Size = New System.Drawing.Size(120, 26)
         Me.CbxPresets.SqaureColour = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
         Me.CbxPresets.SqaureHoverColour = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.CbxPresets.TabIndex = 0
@@ -972,7 +1018,6 @@ Partial Class Frm_Main
         Me.LogInThemeContainer1.ResumeLayout(False)
         Me.LogInThemeContainer1.PerformLayout()
         Me.GbxPresets.ResumeLayout(False)
-        Me.GbxPresets.PerformLayout()
         Me.TbcPresets.ResumeLayout(False)
         Me.TpCharacters.ResumeLayout(False)
         Me.PnlCharactersPresets.ResumeLayout(False)
@@ -983,6 +1028,7 @@ Partial Class Frm_Main
         Me.PnlTypesPresets.ResumeLayout(False)
         Me.TpMethods.ResumeLayout(False)
         Me.PnlMethodsPresets.ResumeLayout(False)
+        Me.PnlMethodsGroup.ResumeLayout(False)
         Me.TpProperties.ResumeLayout(False)
         Me.PnlPropertiesPresets.ResumeLayout(False)
         Me.TpEvents.ResumeLayout(False)
@@ -992,7 +1038,7 @@ Partial Class Frm_Main
         Me.TpAttributes.ResumeLayout(False)
         Me.PnlAttributesPresets.ResumeLayout(False)
         Me.TpParameters.ResumeLayout(False)
-        Me.PnlParametersPresets.ResumeLayout(False)
+        Me.PnlResourcesPresets.ResumeLayout(False)
         Me.GbxAsemblyInfos.ResumeLayout(False)
         Me.GbxAsemblyInfos.PerformLayout()
         Me.GbxSelectFile.ResumeLayout(False)
@@ -1040,7 +1086,7 @@ Partial Class Frm_Main
     Friend WithEvents PnlEventsPresets As System.Windows.Forms.Panel
     Friend WithEvents PnlFieldsPresets As System.Windows.Forms.Panel
     Friend WithEvents PnlAttributesPresets As System.Windows.Forms.Panel
-    Friend WithEvents PnlParametersPresets As System.Windows.Forms.Panel
+    Friend WithEvents PnlResourcesPresets As System.Windows.Forms.Panel
     Friend WithEvents PnlCharactersPresets As System.Windows.Forms.Panel
     Friend WithEvents RdbAlphabeticCharacters As LogInRadioButton
     Friend WithEvents RdbJapaneseCharacters As LogInRadioButton
@@ -1050,7 +1096,6 @@ Partial Class Frm_Main
     Friend WithEvents BgwRenameTask As System.ComponentModel.BackgroundWorker
     Friend WithEvents LsbMain As DotNetRenamer.XertzLoginTheme.LogInStatusBar
     Friend WithEvents LnkLblBlogSpot As System.Windows.Forms.LinkLabel
-    Friend WithEvents LblPresets As DotNetRenamer.XertzLoginTheme.LogInLabel
     Friend WithEvents ChbNamespacesRP As DotNetRenamer.XertzLoginTheme.LogInCheckBox
     Friend WithEvents ChbTypesRP As DotNetRenamer.XertzLoginTheme.LogInCheckBox
     Friend WithEvents ChbMethodsRP As DotNetRenamer.XertzLoginTheme.LogInCheckBox
@@ -1058,9 +1103,13 @@ Partial Class Frm_Main
     Friend WithEvents ChbEventsRP As DotNetRenamer.XertzLoginTheme.LogInCheckBox
     Friend WithEvents ChbFieldsRP As DotNetRenamer.XertzLoginTheme.LogInCheckBox
     Friend WithEvents ChbAttributesRP As DotNetRenamer.XertzLoginTheme.LogInCheckBox
-    Friend WithEvents ChbParametersRP As DotNetRenamer.XertzLoginTheme.LogInCheckBox
+    Friend WithEvents ChbResourcesRP As DotNetRenamer.XertzLoginTheme.LogInCheckBox
     Friend WithEvents RdbGreekCharacters As DotNetRenamer.XertzLoginTheme.LogInRadioButton
     Friend WithEvents TxbSelectedOutput As System.Windows.Forms.TextBox
     Friend WithEvents BtnSelectOutput As DotNetRenamer.XertzLoginTheme.LogInButton
     Friend WithEvents LogInThemeContainer1 As DotNetRenamer.XertzLoginTheme.LogInThemeContainer
+    Friend WithEvents BtnExclude As DotNetRenamer.XertzLoginTheme.LogInButton
+    Friend WithEvents PnlMethodsGroup As System.Windows.Forms.Panel
+    Friend WithEvents ChbRenameVariablesMethods As DotNetRenamer.XertzLoginTheme.LogInCheckBox
+    Friend WithEvents ChbRenameParametersMethods As DotNetRenamer.XertzLoginTheme.LogInCheckBox
 End Class

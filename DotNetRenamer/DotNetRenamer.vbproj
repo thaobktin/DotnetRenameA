@@ -121,6 +121,12 @@
     </Compile>
     <Compile Include="Program.vb" />
     <Compile Include="_Console\Cls_IniFile.vb" />
+    <Compile Include="_WinForm\Frm_Exclusion.designer.vb">
+      <DependentUpon>Frm_Exclusion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="_WinForm\Frm_Exclusion.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="_WinForm\Frm_Main.resx">
@@ -131,6 +137,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_WinForm\Frm_Exclusion.resx">
+      <DependentUpon>Frm_Exclusion.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

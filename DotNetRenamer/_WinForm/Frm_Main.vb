@@ -7,12 +7,14 @@ Imports System.IO
 Imports System.Text
 Imports DotNetRenamer.WinConsole
 Imports DotNetRenamer.Settings
+Imports DotNetRenamer.Implementer.Exclusion
 
 Public Class Frm_Main
 
-#Region " Variables "
+#Region " Fields "
     Private WithEvents _param As Cls_Parameters
     Private WithEvents _Task As Cls_Task
+    Private WithEvents _exclude As Frm_Exclusion
     Private _controlList As List(Of Control)
     Private _taskIsRunning As Boolean
     Private _LanguageType%
@@ -37,13 +39,13 @@ Public Class Frm_Main
 
 #Region " Select Assembly "
 
-    Private Sub TxbSelectedFile_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles TxbSelectedFile.DragEnter
+    Private Sub TxbSelectedFile_DragEnter(sender As Object, e As DragEventArgs) Handles TxbSelectedFile.DragEnter
         If e.Data.GetDataPresent(DataFormats.FileDrop) Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub TxbSelectedFile_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles TxbSelectedFile.DragDrop
+    Private Sub TxbSelectedFile_DragDrop(sender As Object, e As DragEventArgs) Handles TxbSelectedFile.DragDrop
         If e.Data.GetDataPresent(DataFormats.FileDrop) Then
             Dim MyFiles() As String
             MyFiles = e.Data.GetData(DataFormats.FileDrop)
@@ -52,7 +54,7 @@ Public Class Frm_Main
         End If
     End Sub
 
-    Private Sub BtnSelectFile_Click(ByVal sender As Object, ByVal e As EventArgs) Handles BtnSelectFile.Click
+    Private Sub BtnSelectFile_Click(sender As Object, e As EventArgs) Handles BtnSelectFile.Click
         Using ofd As New OpenFileDialog
             With ofd
                 .Title = "Select a DotNet program (VbNet, C#)"
@@ -66,7 +68,7 @@ Public Class Frm_Main
         End Using
     End Sub
 
-    Private Sub BtnSelectOutput_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSelectOutput.Click
+    Private Sub BtnSelectOutput_Click(sender As Object, e As EventArgs) Handles BtnSelectOutput.Click
         Using sfd As New SaveFileDialog
             With sfd
                 .Title = "Select the Output Protected Name"
@@ -85,19 +87,20 @@ Public Class Frm_Main
         End Using
     End Sub
 
-    Private Sub TxbSelectedOutput_Validated(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxbSelectedOutput.Validated
+    Private Sub TxbSelectedOutput_Validated(sender As Object, e As EventArgs) Handles TxbSelectedOutput.Validated
         If Not TxbSelectedFile.Text = String.Empty Then
             ShowSelectedFileInfos(TxbSelectedFile.Text)
         End If
     End Sub
 
-    Private Sub ShowSelectedFileInfos(ByVal FilePath$)
+    Private Sub ShowSelectedFileInfos(FilePath$)
         Try
             _param = New Cls_Parameters(FilePath)
             If _param.isValidFile Then
                 If TxbSelectedOutput.Text = String.Empty Then
-                    TxbSelectedOutput.Text = Path.GetDirectoryName(FilePath$) & "\" & Path.GetFileNameWithoutExtension(FilePath$) & "Protected.exe"
+                    TxbSelectedOutput.Text = Path.GetDirectoryName(FilePath) & "\" & Path.GetFileNameWithoutExtension(FilePath) & "Protected.exe"
                 End If
+
                 _param.outputFile = TxbSelectedOutput.Text
                 TxbAssemblyInfo.Text = _param.getAssemblyName
                 TxbVersionInfo.Text = _param.getAssemblyVersion
@@ -106,6 +109,9 @@ Public Class Frm_Main
                 TxbCpuTargetInfo.Text = _param.getProcessArchitecture
                 TxbSelectedFile.Text = FilePath
                 PbxSelectedFile.Image = Icon.ExtractAssociatedIcon(FilePath).ToBitmap
+
+                _exclude = New Frm_Exclusion(_param.getTreeViewHandler)
+                _exclude.InitializeExcludeList()
             End If
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -141,23 +147,9 @@ Public Class Frm_Main
 #End Region
 
 #Region " Select Presets "
-    Private Sub ChbNamespacesRP_CheckedChanged(ByVal sender As Object) Handles ChbNamespacesRP.CheckedChanged
-        BugFixEnabledChanged()
+    Private Sub ChbNamespacesRP_CheckedChanged(sender As Object, e As EventArgs) Handles ChbNamespacesRP.CheckedChanged
+        PnlNamespacesGroup.Enabled = ChbNamespacesRP.Checked
     End Sub
-
-    Private Sub PnlNamespacesPresets_EnabledChanged(sender As Object, e As System.EventArgs) Handles PnlNamespacesPresets.EnabledChanged
-        BugFixEnabledChanged()
-    End Sub
-
-    Private Sub BugFixEnabledChanged()
-        If ChbNamespacesRP.Checked Then
-            PnlNamespacesGroup.Enabled = True
-        Else
-            PnlNamespacesGroup.Enabled = False
-        End If
-    End Sub
-
-    Private _rdbClick As Boolean
 
     Private Sub RdbAlphabetic_Click(ByVal sender As Object, ByVal e As EventArgs) Handles RdbJapaneseCharacters.Click, RdbInvisibleCharacters.Click, RdbDotsCharacters.Click, RdbChineseCharacters.Click, RdbAlphabeticCharacters.Click, RdbGreekCharacters.Click
         Dim rdb = TryCast(sender, LogInRadioButton)
@@ -175,27 +167,27 @@ Public Class Frm_Main
                                             {RdbAlphabeticCharacters}, {RdbDotsCharacters}, {RdbInvisibleCharacters}, _
                                             {RdbChineseCharacters}, {RdbJapaneseCharacters}, {RdbGreekCharacters}, {ChbRenameMainNamespaceOnlyNamespaces}, _
                                             {ChbReplaceNamespaceByEmptyNamespaces}, {ChbNamespacesRP}, {ChbTypesRP}, {ChbMethodsRP}, _
-                                            {ChbPropertiesRP}, {ChbEventsRP}, {ChbFieldsRP}, {ChbAttributesRP}, {ChbParametersRP}}
+                                            {ChbPropertiesRP}, {ChbEventsRP}, {ChbFieldsRP}, {ChbAttributesRP}, {ChbRenameParametersMethods}, {ChbRenameVariablesMethods}, {ChbResourcesRP}}
 
         Dim State As Cls_RenamerState = Cls_Settings.GetConfig(CbxPresets.SelectedIndex)
 
         TryCast(_controlList.Where(Function(x) x.Name.EndsWith("Characters") AndAlso x.Tag = State.RenamingType).First, LogInRadioButton).Checked = True
         TryCast(_controlList.Where(Function(x) x.Name.EndsWith("Namespaces") AndAlso x.Tag = 0).First, LogInCheckBox).Checked = CBool(State.RenameMainNamespaceSetting)
         TryCast(_controlList.Where(Function(x) x.Name.EndsWith("Namespaces") AndAlso x.Tag = 1).First, LogInCheckBox).Checked = CBool(State.ReplaceNamespacesSetting)
+        TryCast(_controlList.Where(Function(x) x.Name.EndsWith("Methods") AndAlso x.Tag = 0).First, LogInCheckBox).Checked = CBool(State.Parameters)
+        TryCast(_controlList.Where(Function(x) x.Name.EndsWith("Methods") AndAlso x.Tag = 1).First, LogInCheckBox).Checked = CBool(State.Variables)
         TryCast(_controlList.Where(Function(x) x.Name.EndsWith("RP") AndAlso x.Tag.ToString = "Namespaces").First, LogInCheckBox).Checked = CBool(State.Namespaces)
         TryCast(_controlList.Where(Function(x) x.Name.EndsWith("RP") AndAlso x.Tag.ToString = "Types").First, LogInCheckBox).Checked = CBool(State.Types)
         TryCast(_controlList.Where(Function(x) x.Name.EndsWith("RP") AndAlso x.Tag.ToString = "Methods").First, LogInCheckBox).Checked = CBool(State.Methods)
         TryCast(_controlList.Where(Function(x) x.Name.EndsWith("RP") AndAlso x.Tag.ToString = "Properties").First, LogInCheckBox).Checked = CBool(State.Properties)
         TryCast(_controlList.Where(Function(x) x.Name.EndsWith("RP") AndAlso x.Tag.ToString = "Attributes").First, LogInCheckBox).Checked = CBool(State.CustomAttributes)
+        TryCast(_controlList.Where(Function(x) x.Name.EndsWith("RP") AndAlso x.Tag.ToString = "Resources").First, LogInCheckBox).Checked = CBool(State.ResourcesContent)
         TryCast(_controlList.Where(Function(x) x.Name.EndsWith("RP") AndAlso x.Tag.ToString = "Fields").First, LogInCheckBox).Checked = CBool(State.Fields)
         TryCast(_controlList.Where(Function(x) x.Name.EndsWith("RP") AndAlso x.Tag.ToString = "Events").First, LogInCheckBox).Checked = CBool(State.Events)
-        TryCast(_controlList.Where(Function(x) x.Name.EndsWith("RP") AndAlso x.Tag.ToString = "Parameters").First, LogInCheckBox).Checked = CBool(State.Parameters)
 
         If CbxPresets.SelectedIndex = 0 OrElse CbxPresets.SelectedIndex = 1 Then
-            LblPresets.Visible = True
             EnabledPresets(False)
         Else
-            LblPresets.Visible = False
             EnabledPresets(True)
         End If
 
@@ -211,29 +203,54 @@ Public Class Frm_Main
         PnlEventsPresets.Enabled = state
         PnlFieldsPresets.Enabled = state
         PnlAttributesPresets.Enabled = state
-        PnlParametersPresets.Enabled = state
+        PnlResourcesPresets.Enabled = state
     End Sub
 
-    Private Sub ChbTypesRP_CheckedChanged(sender As Object) Handles ChbNamespacesRP.CheckedChanged, _
+    Private Sub ChbTypesRP_CheckedChanged(sender As Object, e As System.EventArgs) Handles ChbNamespacesRP.CheckedChanged, _
                                                                 ChbTypesRP.CheckedChanged, _
                                                                 ChbMethodsRP.CheckedChanged, _
                                                                 ChbPropertiesRP.CheckedChanged, _
                                                                 ChbEventsRP.CheckedChanged, _
                                                                 ChbFieldsRP.CheckedChanged, _
                                                                 ChbAttributesRP.CheckedChanged, _
-                                                                ChbParametersRP.CheckedChanged
+                                                                ChbResourcesRP.CheckedChanged
+
+        Dim chb As LogInCheckBox = TryCast(sender, LogInCheckBox)
+        If chb.Name = "ChbMethodsRP" Then
+            PnlMethodsGroup.Enabled = chb.Checked
+        End If
         If CbxPresets.SelectedIndex = 2 Then
-            Dim chb As LogInCheckBox = TryCast(sender, LogInCheckBox)
             Cls_Settings.SetCustomValue(chb.Name, CInt(chb.Checked))
         End If
     End Sub
 
-    Private Sub ChbRenameMainNamespaceOnlyNamespaces_CheckedChanged(sender As Object) Handles ChbRenameMainNamespaceOnlyNamespaces.CheckedChanged
-        If CbxPresets.SelectedIndex = 2 Then Cls_Settings.SetCustomValue(ChbRenameMainNamespaceOnlyNamespaces.Name, CInt(ChbRenameMainNamespaceOnlyNamespaces.Checked))
+    Private Sub ChbRenameMainNamespaceOnlyNamespaces_CheckedChanged(sender As Object, e As System.EventArgs) Handles ChbRenameMainNamespaceOnlyNamespaces.CheckedChanged, _
+                                                                 ChbReplaceNamespaceByEmptyNamespaces.CheckedChanged, _
+                                                                 ChbRenameParametersMethods.CheckedChanged, _
+                                                                 ChbRenameVariablesMethods.CheckedChanged
+        Dim chb As LogInCheckBox = TryCast(sender, LogInCheckBox)
+        If CbxPresets.SelectedIndex = 2 Then Cls_Settings.SetCustomValue(chb.Name, CInt(chb.Checked))
     End Sub
 
-    Private Sub ChbReplaceNamespaceByEmptyNamespaces_CheckedChanged(sender As Object) Handles ChbReplaceNamespaceByEmptyNamespaces.CheckedChanged
-        If CbxPresets.SelectedIndex = 2 Then Cls_Settings.SetCustomValue(ChbReplaceNamespaceByEmptyNamespaces.Name, CInt(ChbReplaceNamespaceByEmptyNamespaces.Checked))
+#End Region
+
+#Region " Exclusion rules "
+    Private Sub BtnExclude_Click(sender As Object, e As EventArgs) Handles BtnExclude.Click
+        If Not _exclude Is Nothing Then
+            _exclude.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub Frm_Exclusion_OnShowingExclusionInfos(e As Cls_ExcludeList) Handles _exclude.OnShowingExclusionInfos
+        If e.itemsCount <> 0 Then
+            BtnExclude.BorderColour = Color.DarkViolet
+            BtnExclude.Text = "Exclusion rules (" & e.itemsCount & ")"
+        Else
+            BtnExclude.BorderColour = Color.DimGray
+            BtnExclude.Text = "Exclusion rules (0)"
+        End If
+        BtnExclude.Invalidate()
+        _param.ExcludeList = e
     End Sub
 #End Region
 
@@ -260,16 +277,17 @@ Public Class Frm_Main
         Try
             Dim _paramArgs As New Cls_RenamerState() With { _
                                                     .Namespaces = ChbNamespacesRP.Checked, _
+                                                    .RenameMainNamespaceSetting = ChbNamespacesRP.Checked And ChbRenameMainNamespaceOnlyNamespaces.Checked, _
+                                                    .ReplaceNamespacesSetting = ChbNamespacesRP.Checked And ChbReplaceNamespaceByEmptyNamespaces.Checked, _
                                                     .Types = ChbTypesRP.Checked, _
                                                     .Methods = ChbMethodsRP.Checked, _
+                                                    .Parameters = ChbMethodsRP.Checked And ChbRenameParametersMethods.Checked, _
+                                                    .Variables = ChbMethodsRP.Checked And ChbRenameVariablesMethods.Checked, _
                                                     .Properties = ChbPropertiesRP.Checked, _
-                                                    .CustomAttributes = ChbAttributesRP.Checked, _
                                                     .Events = ChbEventsRP.Checked, _
                                                     .Fields = ChbFieldsRP.Checked, _
-                                                    .Parameters = ChbParametersRP.Checked, _
-                                                    .Variables = ChbParametersRP.Checked, _
-                                                    .RenameMainNamespaceSetting = ChbRenameMainNamespaceOnlyNamespaces.Checked, _
-                                                    .ReplaceNamespacesSetting = ChbReplaceNamespaceByEmptyNamespaces.Checked, _
+                                                    .CustomAttributes = ChbAttributesRP.Checked, _
+                                                    .ResourcesContent = ChbResourcesRP.Checked, _
                                                     .RenamingType = CType(_LanguageType, Cls_RandomizerType.RenameEnum), _
                                                     .RenameRuleSetting = CType(CInt(e.Argument), Cls_RenamerState.RenameRule)}
 
@@ -318,7 +336,9 @@ Public Class Frm_Main
             EmptyTextBox()
             GbxSelectFile.Enabled = True
             GbxAsemblyInfos.Enabled = True
+            BtnSelectOutput.Enabled = False
             LsbMain.ShowLine = False
+            _exclude.FinalizeExcludeList()
 
         Catch ex As Exception
             MsgBox(ex.ToString)

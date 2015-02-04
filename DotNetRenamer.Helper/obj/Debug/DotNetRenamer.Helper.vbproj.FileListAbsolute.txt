@@ -16,3 +16,10 @@ C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\Dot
 C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer.Helper\obj\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.dll
 C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Helper\bin\Debug\DotNetRenamer.Helper.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Helper\bin\Debug\DotNetRenamer.Helper.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Helper\bin\Debug\dnlib.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.Resources.resources
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.vbproj.GenerateResource.Cache
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Helper\obj\Debug\DotNetRenamer.Helper.pdb

@@ -54,30 +54,24 @@ Namespace Processing
 
         Friend Shared Sub RenameSettings(mDef As MethodDef, originalN$, obfuscatedN$)
             If Not mDef Is Nothing Then
-                If mDef.HasBody Then
-                    Dim instruction As Instruction
-                    If mDef.Body.Instructions.Count <> 0 Then
-                        For Each instruction In mDef.Body.Instructions
-                            If TypeOf instruction.Operand Is String Then
-                                Dim Name$ = instruction.Operand
-                                If originalN = Name Then
-                                    If mDef.Name.StartsWith("set_") Then
-                                        mDef.Name = "set_" & obfuscatedN
-                                    ElseIf mDef.Name.StartsWith("get_") Then
-                                        mDef.Name = "get_" & obfuscatedN
+                If Not mDef.DeclaringType.BaseType Is Nothing AndAlso mDef.DeclaringType.BaseType.Name = "ApplicationSettingsBase" Then
+                    If mDef.HasBody Then
+                        Dim instruction As Instruction
+                        If mDef.Body.Instructions.Count <> 0 Then
+                            For Each instruction In mDef.Body.Instructions
+                                If TypeOf instruction.Operand Is String Then
+                                    Dim Name$ = instruction.Operand
+                                    If originalN = Name Then
+                                        If mDef.Name.StartsWith("set_") Then
+                                            mDef.Name = "set_" & obfuscatedN
+                                        ElseIf mDef.Name.StartsWith("get_") Then
+                                            mDef.Name = "get_" & obfuscatedN
+                                        End If
+                                        instruction.Operand = obfuscatedN
                                     End If
-                                    instruction.Operand = obfuscatedN
                                 End If
-                            End If
-                        Next
-                    End If
-                End If
-
-                If Cls_CecilHelper.IsRenamable(mDef) Then
-                    If Cls_CecilHelper.IsGetter(mDef) Then
-                        mDef.Name = Cls_Mapping.RenameMethodMember(mDef, "get_" & obfuscatedN)
-                    ElseIf Cls_CecilHelper.IsSetter(mDef) Then
-                        mDef.Name = Cls_Mapping.RenameMethodMember(mDef, "set_" & obfuscatedN)
+                            Next
+                        End If
                     End If
                 End If
             End If
@@ -161,14 +155,32 @@ Namespace Processing
         ''' </summary>
         ''' <param name="prop"></param>
         ''' <param name="obfuscatedN"></param>
-        Friend Shared Sub RenameProperty(prop As PropertyDef, obfuscatedN$)
+        Friend Shared Sub RenameProperty(ByRef prop As PropertyDef, obfuscatedN$, Optional ByVal RenameSpecialMethod As Boolean = False)
             prop.Name = Cls_Mapping.RenamePropertyMember(prop, obfuscatedN)
-            If Not prop.GetMethod Is Nothing Then
-                prop.GetMethod.Name = Cls_Mapping.RenameMethodMember(prop.GetMethod, Cls_Randomizer.GenerateNew())
+
+            If RenameSpecialMethod Then
+                If Not prop.GetMethod Is Nothing Then
+                    Dim meth = Cls_Renamer.RenameMethod(prop.DeclaringType, prop.GetMethod)
+                    Cls_Renamer.RenameParameters(meth)
+                    Cls_Renamer.RenameVariables(meth)
+                End If
+                If Not prop.SetMethod Is Nothing Then
+                    Dim meth = Cls_Renamer.RenameMethod(prop.DeclaringType, prop.SetMethod)
+                    Cls_Renamer.RenameParameters(meth)
+                    Cls_Renamer.RenameVariables(meth)
+                End If
+
+                For Each m In prop.OtherMethods
+                    If Not m Is Nothing Then
+                        If Cls_DnlibHelper.IsRenamable(m) Then
+                            Dim meth = Cls_Renamer.RenameMethod(prop.DeclaringType, m)
+                            Cls_Renamer.RenameParameters(meth)
+                            Cls_Renamer.RenameVariables(meth)
+                        End If
+                    End If
+                Next
             End If
-            If Not prop.SetMethod Is Nothing Then
-                prop.SetMethod.Name = Cls_Mapping.RenameMethodMember(prop.SetMethod, Cls_Randomizer.GenerateNew())
-            End If
+
         End Sub
 
         ''' <summary>
@@ -185,7 +197,7 @@ Namespace Processing
         ''' </summary>
         ''' <param name="events"></param>
         ''' <param name="obfuscatedN"></param>
-        Friend Shared Sub RenameEvent(events As EventDef, obfuscatedN$)
+        Friend Shared Sub RenameEvent(ByRef events As EventDef, obfuscatedN$)
             events.Name = Cls_Mapping.RenameEventMember(events, obfuscatedN)
         End Sub
 
@@ -242,7 +254,7 @@ Namespace Processing
         End Sub
 
         Friend Shared Sub RenameInitializeComponentsValues(TypeDef As TypeDef, NewKeyName$, OriginalKeyName$, ByVal Properties As Boolean)
-            Dim methodSearch As MethodDef = Cls_CecilHelper.FindMethod(TypeDef, "InitializeComponent")
+            Dim methodSearch As MethodDef = Cls_DnlibHelper.FindMethod(TypeDef, "InitializeComponent")
             If Not methodSearch Is Nothing Then
                 If methodSearch.HasBody Then
                     If methodSearch.Body.Instructions.Count <> 0 Then
@@ -272,7 +284,6 @@ Namespace Processing
                 End If
             End If
         End Sub
-
 
 #End Region
 

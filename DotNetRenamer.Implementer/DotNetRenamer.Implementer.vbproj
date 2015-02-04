@@ -50,6 +50,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,6 +73,9 @@
     <Compile Include="_Context\_RenamedItem\Cls_RenamedItemType.vb" />
     <Compile Include="_Context\Cls_RenamerState.vb" />
     <Compile Include="_Context\Cls_Context.vb" />
+    <Compile Include="_Exclusion\Cls_ExcludeList.vb" />
+    <Compile Include="_Exclusion\Cls_Exclusion.vb" />
+    <Compile Include="_Exclusion\Cls_ExclusionState.vb" />
     <Compile Include="_Processing\Cls_Mapping.vb" />
     <Compile Include="_Processing\Cls_Processing.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -125,7 +130,9 @@
       <Name>DotNetRenamer.Helper</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

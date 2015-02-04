@@ -182,3 +182,75 @@ D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.
 D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
 D:\Documents\dotnet-renamer\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
 D:\_BITBUCKET\DotNet Renamer\DotNetRenamer.Implementer\bin\Release\dnlib.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\bin\Release\dnlib.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\dnlib.dll
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+F:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\dnlib.dll
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+E:\PERSONNEL\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\dnlib.dll
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+D:\Bureau\DotNet Renamer - Copie2 - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\bin\Release\dnlib.dll
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+D:\Bureau\DotNet Renamer 1.2 RTM\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.dll
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Implementer.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\bin\Release\dnlib.dll
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.dll
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.dll
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Core20Reader.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\bin\Release\DotNetRenamer.Helper.pdb
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbprojResolveAssemblyReference.cache
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.Resources.resources
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.vbproj.GenerateResource.Cache
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.dll
+D:\Bureau\DotNet Renamer 1.2 RTM - Copie\DotNetRenamer.Implementer\obj\Release\DotNetRenamer.Implementer.pdb

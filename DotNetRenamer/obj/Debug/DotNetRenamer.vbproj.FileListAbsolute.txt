@@ -20,3 +20,20 @@ C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\Dot
 C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\obj\Debug\DotNetRenamer.pdb
 C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\DotNetRenamer.exe.config
 C:\Documents and Settings\blondinl\Mes documents\lolo\DotNet Renamer - Dnlib\DotNetRenamer\bin\Debug\Config.ini
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\bin\Debug\DotNetRenamer.exe.config
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\obj\Debug\DotNetRenamer.exe
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\obj\Debug\DotNetRenamer.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\obj\Debug\DotNetRenamer.vbprojResolveAssemblyReference.cache
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\obj\Debug\DotNetRenamer.Frm_Main.resources
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\obj\Debug\DotNetRenamer.Resources.resources
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\obj\Debug\DotNetRenamer.Frm_Exclusion.resources
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\obj\Debug\DotNetRenamer.vbproj.GenerateResource.Cache
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\bin\Debug\DotNetRenamer.exe
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\bin\Debug\DotNetRenamer.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\bin\Debug\DotNetRenamer.Helper.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\bin\Debug\DotNetRenamer.Implementer.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\bin\Debug\dnlib.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\bin\Debug\DotNetRenamer.Core20Reader.dll
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\bin\Debug\DotNetRenamer.Helper.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\bin\Debug\DotNetRenamer.Implementer.pdb
+D:\_BITBUCKET\DotNet Renamer - Copie2\DotNetRenamer\bin\Debug\DotNetRenamer.Core20Reader.pdb
